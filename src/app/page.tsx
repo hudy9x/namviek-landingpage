@@ -1,9 +1,11 @@
-import { SpotlightPreview } from "@/containers/SpotlightPreview";
+import FeatureSection from "@/containers/FeatureSection";
+import HeroSection from "@/containers/HeroSection";
 
 export default function Home() {
   return (
     <>
-      <SpotlightPreview />
+      <HeroSection />
+      <FeatureSection />
     </>
   )
 }
