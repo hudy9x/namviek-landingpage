@@ -1,29 +1,19 @@
-import { Inter, Lexend } from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
+import { fontInter, fontJosefinSan } from '@/utils/fonts'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
+    template: 'Namviek',
+    default: 'Namviek - The open source task manager for super tiny teams',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'Do not mind the cost any more, just do your work now. Namviek has a lot of features that helps you run your team with a low budget',
 }
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
 
-const lexend = Lexend({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-lexend',
-})
 
 export default function RootLayout({
   children,
@@ -34,12 +24,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
-        inter.variable,
-        lexend.variable,
+        fontInter.variable,
+        fontJosefinSan.variable,
       )}
     >
-      <body className="flex h-full flex-col">{children}</body>
+      <body className="h-screen bg-black">{children}</body>
     </html>
   )
 }
