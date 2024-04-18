@@ -22,7 +22,7 @@ export function FeatureBentoGrids() {
           description={item.description}
           header={item.header}
           // icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+          className={item.size === 2 ? "md:col-span-2" : ""}
         />
       ))}
     </BentoGrid>
@@ -34,45 +34,65 @@ const Skeleton = () => (
 
 const items = [
   {
-    title: "The Dawn of Innovation",
+    title: "List and Board view",
     description: "Explore the birth of groundbreaking ideas and inventions.",
     header: <Skeleton />,
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
+    title: "Goal view",
     description: "Dive into the transformative power of technology.",
     header: <Skeleton />,
     // icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Art of Design",
+    title: "Calendar view",
     description: "Discover the beauty of thoughtful and functional design.",
     header: <Skeleton />,
     // icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
+    title: "View customization",
     description:
       "Understand the impact of effective communication in our lives.",
     header: <Skeleton />,
+    size: 2,
     // icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Pursuit of Knowledge",
+    title: "Dashboard",
     description: "Join the quest for understanding and enlightenment.",
     header: <Skeleton />,
     // icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Joy of Creation",
+    title: "Notification",
     description: "Experience the thrill of bringing ideas to life.",
     header: <Skeleton />,
     // icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Spirit of Adventure",
+    title: "Meeting",
     description: "Embark on exciting journeys and thrilling discoveries.",
+    header: <Skeleton />,
+    // icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Project & Member",
+    description: "Embark on exciting journeys and thrilling discoveries.",
+    header: <Skeleton />,
+    // icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Data Export",
+    description: "Embark on exciting journeys and thrilling discoveries.",
+    header: <Skeleton />,
+    // icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "App integrations",
+    description: "Embark on exciting journeys and thrilling discoveries.",
+    size: 2,
     header: <Skeleton />,
     // icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
@@ -81,7 +101,7 @@ const items = [
 
 
 export default function FeatureSection() {
-  return <section className="features">
+  return <section className="features pt-[200px]">
     <header className="space-y-6">
       <Heading2 className="text-center">Essential features<br />for running your team</Heading2>
       <Para2 className="text-center">Provides built-in features like Views, Import, Export,<br /> Notification, Dashboard, Meeting, ...etc</Para2>
