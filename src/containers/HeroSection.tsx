@@ -3,6 +3,7 @@ import AppImage from '../images/app.png'
 import Image from "next/image";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { fontJosefinSan } from "@/utils/fonts";
+import { HoverBorderGradient } from "@/components/ui/HoverBorderGradient";
 export default function HeroSection() {
   return <>
     {/* <SpotlightPreview /> */}
@@ -27,8 +28,19 @@ export default function HeroSection() {
         </h1>
         <p className="mt-4 font-normal text-para1 text-neutral-300 max-w-lg text-center mx-auto">The open-source task manager for super tiny teams
           With extremely low budget</p>
+
+        <div className="flex justify-center mt-8">
+          <HoverBorderGradient
+            containerClassName="rounded-full"
+            as="button"
+            className="bg-black text-white flex items-center space-x-2"
+          >
+            <span>Clone it now</span>
+          </HoverBorderGradient>
+
+        </div>
       </div>
     </div>
-    <Image className="grayscale mx-auto" src={AppImage} alt="App image" />
+    <Image className="grayscale w-[1024px] opacity-90 mx-auto" src={AppImage} alt="App image" />
   </>
 }
