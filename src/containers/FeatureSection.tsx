@@ -1,6 +1,6 @@
 import Heading2 from "@/components/Heading2";
 import Para2 from "@/components/Para2";
-import React from "react";
+import React, { ReactNode } from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
 // import {
 //   IconArrowWaveRightUp,
@@ -14,7 +14,7 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
 
 export function FeatureBentoGrids() {
   return (
-    <BentoGrid className="max-w-4xl pt-12 mx-auto">
+    <BentoGrid className="max-w-6xl pt-12 mx-auto">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -28,15 +28,16 @@ export function FeatureBentoGrids() {
     </BentoGrid>
   );
 }
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-black"></div>
+const Skeleton = ({ children }: { children?: ReactNode }) => (
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl relative bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-black">{children}</div>
 );
 
 const items = [
   {
     title: "List and Board view",
     description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
+    header: <Skeleton>
+    </Skeleton>,
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {

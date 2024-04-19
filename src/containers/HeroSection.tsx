@@ -8,7 +8,7 @@ export default function HeroSection() {
   return <>
     {/* <SpotlightPreview /> */}
 
-    <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-dot-white/[0.2] relative overflow-hidden">
+    <div className="pt-[15rem] pb-[5rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-dot-white/[0.2] relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
