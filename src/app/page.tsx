@@ -7,13 +7,13 @@ import HeroSection from "@/containers/HeroSection";
 
 export default function Home() {
   return (
-    <>
+    <main className="main-container relative">
       <HeroSection />
       <FeatureSection />
       <CostSection />
       <ContributeSection />
       <AboutUsSection />
       <FAQSection />
-    </>
+    </main>
   )
 }
