@@ -2,15 +2,14 @@ import Heading2 from "@/components/Heading2";
 import Para2 from "@/components/Para2";
 import React, { ReactNode } from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
-// import {
-//   IconArrowWaveRightUp,
-//   IconBoxAlignRightFilled,
-//   IconBoxAlignTopLeft,
-//   IconClipboardCopy,
-//   IconFileBroken,
-//   IconSignature,
-//   IconTableColumn,
-// } from "@tabler/icons-react";
+import Bento from "@/components/ui/Bento";
+import Image from "next/image";
+
+import featListViewImg from "@/images/feat-list-view.png";
+import featBoardViewImg from "@/images/feat-board-view.png";
+import fCustomViewImg from "@/images/feat-custom-view.png";
+import fGoalViewImg from "@/images/feat-goal-view.png";
+import fCalendarViewImg from "@/images/feat-calendar-view.png";
 
 export function FeatureBentoGrids() {
   return (
@@ -107,6 +106,31 @@ export default function FeatureSection() {
       <Heading2 className="text-center">Essential features<br />for running your team</Heading2>
       <Para2 className="text-center">Provides built-in features like Views, Import, Export,<br /> Notification, Dashboard, Meeting, ...etc</Para2>
     </header>
-    <FeatureBentoGrids />
+
+    <div className="flex items-center gap-4 justify-center mt-12">
+      <Bento title="List view" desc="some thing here" >
+
+        <Image src={featListViewImg} alt="List view feature" />
+
+      </Bento>
+      <Bento title="Board view" desc="some thing here" >
+
+        <Image src={featBoardViewImg} alt="Board view feature" />
+      </Bento>
+    </div>
+
+    <div className="flex items-center gap-4 justify-center mt-4">
+      <Bento title="View customization" desc="some thing here" >
+        <Image src={fCustomViewImg} alt="Custom view feature" />
+      </Bento>
+
+      <Bento title="Goal view" desc="some thing here" >
+        <Image src={fGoalViewImg} alt="Goal view feature" />
+      </Bento>
+
+      <Bento title="Calendar view" desc="some thing here" >
+        <Image src={fCalendarViewImg} alt="Calendar view feature" />
+      </Bento>
+    </div>
   </section>
 }
