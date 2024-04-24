@@ -12,9 +12,6 @@ export default function FollowLight({ children }: { children: ReactNode }) {
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
 
-    console.log(';=============')
-    console.log(clientX - left)
-    console.log(clientY - top)
   }
 
   const maskImage = useMotionTemplate`radial-gradient(240px at ${mouseX}px ${mouseY}px, white, transparent)`;
@@ -40,6 +37,10 @@ export default function FollowLight({ children }: { children: ReactNode }) {
           className="absolute inset-0 z-50 opacity-0 mix-blend-overlay transition duration-1000 group-hover:opacity-100"
           style={style}
         />
+        {/* <motion.div */}
+        {/*   className="absolute inset-0 z-50" */}
+        {/*   style={style} */}
+        {/* /> */}
       </div>
 
       {children}
