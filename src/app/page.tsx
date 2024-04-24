@@ -14,10 +14,7 @@ export default function Home() {
       <FeatureSection />
       <CostSection />
       <DownloadSection />
-      {/* <ContributeSection /> */}
-      {/* <AboutUsSection /> */}
-      {/* <FAQSection /> */}
-
+      <AboutUsSection />
       <Footer />
     </main>
   )

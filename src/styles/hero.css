@@ -15,6 +15,6 @@
 
 }
 
-/* .hero-slider-container:hover:after{ */
-/*   opacity: 0.3 */
-/* } */
+.hero-slider-container:hover:after{
+  opacity: 0.6
+}
