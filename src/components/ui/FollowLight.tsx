@@ -14,7 +14,7 @@ export default function FollowLight({ children }: { children: ReactNode }) {
 
   }
 
-  const maskImage = useMotionTemplate`radial-gradient(240px at ${mouseX}px ${mouseY}px, white, transparent)`;
+  const maskImage = useMotionTemplate`radial-gradient(240px at ${mouseX}px ${mouseY}px, red, transparent)`;
 
   const style = { maskImage, WebkitMaskImage: maskImage };
 
