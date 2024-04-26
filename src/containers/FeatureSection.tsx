@@ -11,7 +11,7 @@ import fGoalViewImg from "@/images/feat-goal-view.png";
 import fCalendarViewImg from "@/images/feat-calendar-view.png";
 
 export default function FeatureSection() {
-  return <section className="features pt-[200px]">
+  return <section id="features" className="features pt-[200px]">
     <header className="space-y-6">
       <Heading2 className="text-center">Essential features<br />for running your team</Heading2>
       <Para2 className="text-center">Provides built-in features like Views, Import, Export,<br /> Notification, Dashboard, Meeting, ...etc</Para2>

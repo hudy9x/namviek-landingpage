@@ -18,9 +18,6 @@ export default function FollowLight({ children }: { children: ReactNode }) {
 
   const style = { maskImage, WebkitMaskImage: maskImage };
 
-  console.log(style)
-
-
   return (
     <div
       onMouseMove={onMouseMove}

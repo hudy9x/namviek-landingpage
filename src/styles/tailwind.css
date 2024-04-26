@@ -14,3 +14,11 @@
   display: none;
 }
 
+a{
+  @apply text-gray-400;
+  @apply hover:underline hover:text-gray-200;
+}
+
+html, body {
+  scroll-behavior: smooth
+}
