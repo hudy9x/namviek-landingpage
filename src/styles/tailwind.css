@@ -3,3 +3,22 @@
 @tailwind utilities;
 
 @import url('./hero.css')
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+ 
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+a{
+  @apply text-gray-400;
+  @apply hover:underline hover:text-gray-200;
+}
+
+html, body {
+  scroll-behavior: smooth
+}

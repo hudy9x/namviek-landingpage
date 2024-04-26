@@ -7,8 +7,9 @@ import Heading1 from "@/components/Heading1";
 import { motion } from "framer-motion";
 import AnimElement from "@/components/ui/AnimElement";
 import FollowLight from "@/components/ui/FollowLight";
+import Link from "next/link";
 export default function HeroSection() {
-  return <div className="hero">
+  return <div id="hero" className="hero">
     <div className="pt-[15rem] pb-[5rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-dot-white/[0.2] relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
@@ -37,7 +38,9 @@ export default function HeroSection() {
               as="button"
               className="bg-black text-white flex items-center space-x-2"
             >
-              <span>Clone it now</span>
+              <Link href="#download">
+                <span>Clone it now</span>
+              </Link>
             </HoverBorderGradient>
 
           </div>

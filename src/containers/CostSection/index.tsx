@@ -8,7 +8,7 @@ import { SiGithub, SiMongodb, SiPusher } from "react-icons/si";
 import "./style.css"
 
 export default function CostSection() {
-  return <section className="cost pt-[200px]">
+  return <section className="cost pt-[200px] pb-[200px]">
     <header className="space-y-6">
       <Heading2 className="text-center">Reduce the cost<br />to less than $10/month</Heading2>
       <Para2 className="text-center">Ultilize free platforms and low budget aws services<br />to host the app</Para2>

@@ -1,7 +1,7 @@
 import { fontJosefinSan } from "@/utils/fonts";
 import "./style.css";
 import { ReactNode } from "react";
-import TrackingLight from "../TrackingLight";
+import FollowLight from "../FollowLight";
 
 export default function Bento({
   title,
@@ -20,15 +20,15 @@ export default function Bento({
   className && classes.push(className)
 
   return <section className={classes.join(" ")}>
-    {/* <div className="bento-image [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-purple-500/20"> */}
+    {/* <div className="bento-image [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-blue-500/20"> */}
     <div className="bento-image">
-      <TrackingLight>
+      <FollowLight>
         {children}
-      </TrackingLight>
+      </FollowLight>
     </div>
     <header className="bento-heading">
       <h2 className={`${fontJosefinSan.className} text-xl font-bold`}>{title}</h2>
-      <p className="text-sm text-gray-500">{desc}</p>
+      <p className="text-base text-gray-400 w-[330px]">{desc}</p>
     </header>
   </section>
 }
