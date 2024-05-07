@@ -14,7 +14,7 @@ export default function DownloadSection() {
       <Installation />
 
       <div className="text-center relative z-10" style={{ marginTop: 50 }}>
-        <Link target="_blank" className="hover:underline hover:text-gray-300 text-gray-400" href="https://github.com/hudy9x/namviek">View full setup guide</Link>
+        <Link target="_blank" className="hover:underline hover:text-gray-300 text-gray-400" href="https://docs.namviek.com/doc/installation">View full setup guide</Link>
       </div>
     </header>
   </section>
