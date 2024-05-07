@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import AnimElement from "@/components/ui/AnimElement";
 import FollowLight from "@/components/ui/FollowLight";
 import Link from "next/link";
+import '@/styles/hero.css'
+
 export default function HeroSection() {
   return <div id="hero" className="hero">
     <div className="pt-[15rem] pb-[5rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-dot-white/[0.2] relative overflow-hidden">
@@ -48,9 +50,11 @@ export default function HeroSection() {
       </div>
     </div>
     <AnimElement
-      className="hero-slider-container">
-      <Image className=" w-[1216px] opacity-90 mx-auto" src={ListViewImage} alt="List view image" />
-      {/* <div className="absolute top-[35%] z-40 left-1/2 -translate-x-1/2 rounded-xl border border-gray-500/50 px-8 py-6 text-white backdrop-blur-sm text-xl uppercase"></div> */}
+      className="">
+      <div className="hero-slider-container">
+        <Image className=" w-[1216px] mx-auto" src={ListViewImage} alt="List view image" />
+        {/* <div className="absolute top-[35%] z-40 left-1/2 -translate-x-1/2 rounded-xl border border-gray-500/50 px-8 py-6 text-white backdrop-blur-sm text-xl uppercase"></div> */}
+      </div>
     </AnimElement>
   </div>
 }
