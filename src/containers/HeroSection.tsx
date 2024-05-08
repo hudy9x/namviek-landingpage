@@ -7,6 +7,7 @@ import Heading1 from "@/components/Heading1";
 import AnimElement from "@/components/ui/AnimElement";
 import Link from "next/link";
 import '@/styles/hero.css'
+import GithubStar from "@/components/ui/GithubStar";
 
 export default function HeroSection() {
   return <div id="hero" className="hero">
@@ -41,8 +42,8 @@ export default function HeroSection() {
                 <span>Clone it now</span>
               </Link>
             </HoverBorderGradient>
-
           </div>
+          <GithubStar />
         </AnimElement>
       </div>
     </div>

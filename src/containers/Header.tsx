@@ -3,7 +3,6 @@ import logoImg from "@/images/icon.png"
 import { FaDiscord, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import AnimElement from "@/components/ui/AnimElement";
-import TopNav from "./TopNav";
 
 export default function Header() {
   return <header className="top-header absolute z-10 top-0 left-0 w-full">
