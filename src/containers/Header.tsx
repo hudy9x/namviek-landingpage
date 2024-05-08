@@ -16,8 +16,12 @@ export default function Header() {
           <Link href={"#about"}>About</Link>
         </nav>
         <section className="flex items-center gap-3 text-white">
-          <FaDiscord />
-          <FaGithub />
+          <Link href={"https://discord.gg/FbGnhusm"}>
+            <FaDiscord />
+          </Link>
+          <Link href={"https://github.com/hudy9x/namviek"}>
+            <FaGithub />
+          </Link>
         </section>
 
       </div>
