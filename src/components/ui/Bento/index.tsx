@@ -27,7 +27,7 @@ export default function Bento({
     viewport={{ once: true }}
   >
     <section className={classes.join(" ")}>
-      <div className="bento-image [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-pink-500/20">
+      <div className="bento-image [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-blue-500/5 hover:bg-blue-500/20 transition-all duration-700">
         {/* <div className="bento-image"> */}
         {children}
       </div>
