@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('./hero.css')
+/* @import url('./hero.css') */
 
 .no-visible-scrollbar {
   scrollbar-width: none;

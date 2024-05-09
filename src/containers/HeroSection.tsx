@@ -4,10 +4,11 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import { fontJosefinSan } from "@/utils/fonts";
 import { HoverBorderGradient } from "@/components/ui/HoverBorderGradient";
 import Heading1 from "@/components/Heading1";
-import { motion } from "framer-motion";
 import AnimElement from "@/components/ui/AnimElement";
-import FollowLight from "@/components/ui/FollowLight";
 import Link from "next/link";
+import '@/styles/hero.css'
+import GithubStar from "@/components/ui/GithubStar";
+
 export default function HeroSection() {
   return <div id="hero" className="hero">
     <div className="pt-[15rem] pb-[5rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-dot-white/[0.2] relative overflow-hidden">
@@ -15,7 +16,6 @@ export default function HeroSection() {
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
       />
-      {/* Gradient */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
@@ -42,15 +42,17 @@ export default function HeroSection() {
                 <span>Clone it now</span>
               </Link>
             </HoverBorderGradient>
-
           </div>
+          <GithubStar />
         </AnimElement>
       </div>
     </div>
     <AnimElement
-      className="hero-slider-container">
-      <Image className=" w-[1216px] opacity-90 mx-auto" src={ListViewImage} alt="List view image" />
-      {/* <div className="absolute top-[35%] z-40 left-1/2 -translate-x-1/2 rounded-xl border border-gray-500/50 px-8 py-6 text-white backdrop-blur-sm text-xl uppercase"></div> */}
+      className="">
+      <div className="hero-slider-container">
+        <Image className=" w-[1216px] mx-auto" src={ListViewImage} alt="List view image" />
+        {/* <div className="absolute top-[35%] z-40 left-1/2 -translate-x-1/2 rounded-xl border border-gray-500/50 px-8 py-6 text-white backdrop-blur-sm text-xl uppercase"></div> */}
+      </div>
     </AnimElement>
   </div>
 }

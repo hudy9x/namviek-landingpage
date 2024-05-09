@@ -1,10 +1,10 @@
 .bento-card {
   @apply relative;
-  @apply border-4 border-gray-100/30 rounded-xl;
+  @apply border border-zinc-800 rounded-xl;
 }
 
 .bento-heading {
-  @apply py-4 px-8 border-t-2 border-gray-100/30 rounded-b-xl;
+  @apply py-4 px-8 border-t border-zinc-800 rounded-b-xl;
   @apply absolute bottom-0 left-0 w-full bg-black/30 backdrop-blur-md;
   @apply text-gray-200;
 }
