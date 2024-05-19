@@ -22,7 +22,7 @@ export default function FeatureSection() {
       </MotionElement>
     </header>
 
-    <div className="flex items-center gap-4 justify-center mt-12">
+    <div className="block md:flex items-center gap-4 justify-center mt-12">
       <Bento title="List view" desc="See it all at once. Prioritize and manage your tasks in a simple list." >
         <Image src={featListViewImg} alt="List view feature" />
       </Bento>
@@ -32,7 +32,7 @@ export default function FeatureSection() {
       </Bento>
     </div>
 
-    <div className="flex items-center gap-4 justify-center mt-4">
+    <div className="block md:flex items-center gap-4 justify-center mt-4">
       <Bento title="View customization" desc="Work your way. Design the perfect view to fit your specific needs." >
         <Image src={fCustomViewImg} alt="Custom view feature" />
       </Bento>
