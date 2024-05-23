@@ -8,8 +8,12 @@ export default function Footer() {
     <div className="mx-auto w-[1024px] flex justify-between">
       <span>Copyright by <Link target="_blank" href="https://hudy9x.com">@hudy9x</Link></span>
       <div className="flex items-center gap-3 text-white">
-        <FaDiscord />
-        <FaGithub />
+        <Link href={"https://discord.gg/XbYtDQYFPZ"}>
+          <FaDiscord />
+        </Link>
+        <Link href={"https://github.com/hudy9x/namviek"}>
+          <FaGithub />
+        </Link>
       </div>
     </div>
   </div>
