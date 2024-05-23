@@ -1,5 +1,5 @@
 'use client'
-import { fontJosefinSan } from "@/utils/fonts"
+import { fontInter } from "@/utils/fonts"
 import { ReactNode } from "react"
 import { delay, motion } from "framer-motion";
 
@@ -15,9 +15,9 @@ export default function Heading1({
   children: ReactNode
 }) {
 
-  const classes = ["text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50"]
+  const classes = ["whitespace-nowrap text-4xl sm:text-5xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50"]
 
-  classes.push(fontJosefinSan.className)
+  classes.push(fontInter.className)
 
   className && classes.push(className)
 

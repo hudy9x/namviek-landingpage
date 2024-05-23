@@ -2,6 +2,7 @@ import ListViewImage from "@/images/list-view.png";
 import Image from "next/image";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { fontJosefinSan } from "@/utils/fonts";
+import { fontInter } from "@/utils/fonts";
 import { HoverBorderGradient } from "@/components/ui/HoverBorderGradient";
 import Heading1 from "@/components/Heading1";
 import AnimElement from "@/components/ui/AnimElement";
@@ -18,19 +19,19 @@ export default function HeroSection() {
       />
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
-      <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+      <div className=" p-4 max-w-7xl  mx-auto relative z-10 w-full pt-20 md:pt-0">
         <Heading1 delay={1} duration={6}>
-          <span className={fontJosefinSan.className}>
+          <span className={`${fontInter.className} tracking-tighter font-semibold`}>
             {"Don't mind the cost"}
           </span>
           <br />
-          <span className={fontJosefinSan.className}>
+          <span className={`${fontInter.className} tracking-tighter font-semibold`}>
             Just do the work
           </span>
         </Heading1>
         <AnimElement>
-          <p className="mt-4 font-normal text-para1 text-neutral-400 max-w-lg text-center mx-auto">The open-source task manager for super tiny teams
-            With a lot of built-in features</p>
+          <p className={`${fontInter.className} text-sm lg:text-lg tracking-tighter mt-4 font-normal text-para1 text-gray-400 max-w-lg text-center mx-auto`}>The open-source task manager for super tiny teams
+            with a lot of built-in features</p>
 
           <div className="flex justify-center mt-8">
             <HoverBorderGradient
@@ -38,7 +39,7 @@ export default function HeroSection() {
               as="button"
               className="bg-black text-white flex items-center space-x-2"
             >
-              <Link href="#download">
+              <Link className="no-underline" href="#download">
                 <span>Clone it now</span>
               </Link>
             </HoverBorderGradient>

@@ -14,7 +14,7 @@ export default function FeatureSection() {
   return <section id="features" className="features pt-[200px]">
     <header className="space-y-6">
       <Heading2 className="text-center">Essential features<br />for running your team</Heading2>
-      <Para2 className="text-center">Provides built-in features like Views, Import, Export,<br /> Notification, Dashboard, Meeting, ...etc</Para2>
+      <Para2 className="text-gray-400 text-center text-md">Provides built-in features like Views, Import, Export,<br /> Notification, Dashboard, Meeting, etc</Para2>
     </header>
 
     <div className="flex items-center gap-4 justify-center mt-12">

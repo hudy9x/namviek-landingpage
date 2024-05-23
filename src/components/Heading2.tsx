@@ -1,4 +1,4 @@
-import { fontJosefinSan } from "@/utils/fonts"
+import { fontInter } from "@/utils/fonts"
 import { ReactNode } from "react"
 
 export default function Heading2({ className, children }: {
@@ -6,9 +6,9 @@ export default function Heading2({ className, children }: {
   children: ReactNode
 }) {
 
-  const classes = ["text-h2 font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 leading-[58px]"]
+  const classes = ["text-4xl md:text-5xl pb-1 font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 leadin"]
 
-  classes.push(fontJosefinSan.className)
+  classes.push(fontInter.className)
 
   className && classes.push(className)
 
