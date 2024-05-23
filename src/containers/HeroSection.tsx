@@ -1,7 +1,6 @@
 import ListViewImage from "@/images/list-view.png";
 import Image from "next/image";
 import { Spotlight } from "@/components/ui/Spotlight";
-import { fontJosefinSan } from "@/utils/fonts";
 import { fontInter } from "@/utils/fonts";
 import { HoverBorderGradient } from "@/components/ui/HoverBorderGradient";
 import Heading1 from "@/components/Heading1";

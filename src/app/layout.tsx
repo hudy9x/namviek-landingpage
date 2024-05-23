@@ -2,7 +2,7 @@ import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
-import { fontInter, fontJosefinSan } from '@/utils/fonts'
+import { fontInter } from '@/utils/fonts'
 
 export const metadata: Metadata = {
   title: {
@@ -24,8 +24,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        fontInter.variable,
-        fontJosefinSan.variable,
+        fontInter.variable
       )}
     >
       <body className="h-screen bg-black">{children}</body>

@@ -2,7 +2,7 @@
 import React from "react";
 import { cn } from "@/utils/cn";
 import { Spotlight } from "@/components/ui/Spotlight";
-import { fontJosefinSan } from "@/utils/fonts";
+import { fontInter } from "@/utils/fonts";
 
 export function SpotlightPreview() {
   return (
@@ -16,11 +16,11 @@ export function SpotlightPreview() {
 
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
         <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-          <span className={fontJosefinSan.className}>
+          <span className={fontInter.className}>
             {"Don't mind the cost"}
           </span>
           <br />
-          <span className={fontJosefinSan.className}>
+          <span className={fontInter.className}>
             Just do the work
           </span>
         </h1>
