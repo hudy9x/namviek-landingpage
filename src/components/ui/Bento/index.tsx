@@ -1,5 +1,5 @@
 'use client'
-import { fontJosefinSan } from "@/utils/fonts";
+import { fontInter } from "@/utils/fonts";
 import "./style.css";
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
@@ -32,8 +32,8 @@ export default function Bento({
         {children}
       </div>
       <header className="bento-heading">
-        <h2 className={`${fontJosefinSan.className} text-xl font-bold`}>{title}</h2>
-        <p className="text-base text-gray-400 w-[330px]">{desc}</p>
+        <h2 className={`${fontInter.className} text-xl font-bold tracking-tight`}>{title}</h2>
+        <p className="text-base text-gray-400 w-[330px] tracking-tight">{desc}</p>
       </header>
     </section>
   </motion.div>

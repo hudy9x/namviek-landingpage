@@ -24,6 +24,6 @@ export default function CostSection() {
       <div className="service-item"><SiPusher /></div>
       <div className="service-item"><SiGithub /></div>
     </section>
-    <p className="mt-14 text-gray-500 leading-7 text-center w-[500px] mx-auto">Dramatically reduced team management costs from $10 to under $5/month. Achieved this by leveraging GitHub Actions for automated deployments and hosting the app on budget-friendly AWS Lightsail, ditching the previous Vercel plan.</p>
+    <p className="mt-14 text-gray-400 leading-7 text-center w-[500px] mx-auto">Dramatically reduced team management costs from $10 to under $5/month. Achieved this by leveraging GitHub Actions for automated deployments and hosting the app on budget-friendly AWS Lightsail, ditching the previous Vercel plan.</p>
   </section>
 }

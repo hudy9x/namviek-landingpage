@@ -1,5 +1,5 @@
 
-import { fontInter, fontJosefinSan } from "@/utils/fonts"
+import { fontInter } from "@/utils/fonts"
 import { ReactNode } from "react"
 
 export default function Para2({ className, children }: {
@@ -7,7 +7,7 @@ export default function Para2({ className, children }: {
   children: ReactNode
 }) {
 
-  const classes = ["text-para2 text-white"]
+  const classes = ["text-md text-gray-300"]
 
   classes.push(fontInter.className)
   className && classes.push(className)
