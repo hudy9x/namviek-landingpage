@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -52,7 +52,10 @@ export const Tabs = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-4 py-2 rounded-full", tabClassName)}
+            className={cn(
+              "relative px-4 py-2 rounded-full text-sm sm:text-base",
+              tabClassName
+            )}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -62,12 +65,11 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-white/10 backdrop-blur-sm border-2 border-white/30 dark:bg-zinc-800 rounded-full ",
+                  "absolute inset-0 bg-white/10 backdrop-blur-sm border-2 border-white/30 dark:bg-zinc-800 rounded-full",
                   activeTabClassName
                 )}
               />
             )}
-
             <span className="relative block text-gray-300">
               {tab.title}
             </span>
@@ -79,7 +81,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-20", contentClassName)}
+        className={cn("mt-10 sm:mt-20", contentClassName)}
       />
     </>
   );
@@ -88,6 +90,7 @@ export const Tabs = ({
 export const FadeInDiv = ({
   className,
   tabs,
+  active,
   hovering,
 }: {
   className?: string;
@@ -107,8 +110,7 @@ export const FadeInDiv = ({
           layoutId={tab.value}
           style={{
             scale: 1 - idx * 0.1,
-            // top: hovering ? idx * -50 : 0,
-            top: idx * -30,
+            top: idx * -20,
             zIndex: -idx,
             opacity: idx < 3 ? 1 - idx * 0.1 : 0,
           }}
@@ -123,4 +125,3 @@ export const FadeInDiv = ({
     </div>
   );
 };
-
