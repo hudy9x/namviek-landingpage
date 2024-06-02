@@ -27,7 +27,7 @@ export default function RootLayout({
         fontInter.variable
       )}
     >
-      <body className="h-screen bg-black">{children}</body>
+      <body className="w-screen bg-black">{children}</body>
     </html>
   )
 }
