@@ -1,0 +1,10 @@
+.btn {
+  @apply rounded border border-gray-200 bg-white px-3 py-2;
+  @apply text-sm hover:bg-gray-50 active:bg-gray-100;
+  @apply inline-flex items-center;
+}
+
+.btn.btn-primary {
+  @apply border-indigo-600 bg-indigo-600 text-white;
+  @apply hover:bg-indigo-500 active:bg-indigo-700;
+}

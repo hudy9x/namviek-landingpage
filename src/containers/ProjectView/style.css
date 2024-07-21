@@ -1,0 +1,44 @@
+.view-name-input {
+  @apply flex items-center gap-2 border-b bg-gray-900 border-t border-l border-r rounded-tr rounded-tl;
+  @apply px-[1.625rem] py-4 border-gray-700;
+  @apply text-gray-500;
+
+  input {
+    @apply w-[87%] text-lg outline-none;
+    @apply bg-transparent;
+  }
+
+  svg {
+    @apply h-5 w-5;
+  }
+}
+
+.view-form {
+  @apply -m-6 rounded-l-md;
+}
+
+.view-types {
+  @apply shrink-0 w-[200px] bg-gray-900 border-l border-r border-b rounded-bl border-gray-700;
+  @apply p-4 space-y-1.5; 
+}
+
+.view-item {
+  @apply flex items-center gap-2 cursor-pointer;
+  @apply text-sm text-gray-500;
+  @apply py-2 px-2.5 rounded-md transition-all mt-2 mb-2;
+  @apply hover:bg-gray-800 hover:text-gray-400;
+
+  svg {
+    @apply w-5 h-5;
+  }
+
+  &.active {
+    @apply bg-indigo-50 text-indigo-600;
+    @apply bg-indigo-500/20 text-indigo-300;
+  }
+}
+
+.view-form-detail {
+  @apply bg-gray-800 rounded-br;
+  @apply py-4 px-8 w-full border-l border-r border-b border-gray-700;
+}
