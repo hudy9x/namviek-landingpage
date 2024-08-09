@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
 import { fontInter } from '@/utils/fonts'
+import Head from 'next/head'
 
 export const metadata: Metadata = {
   title: {
@@ -27,6 +28,14 @@ export default function RootLayout({
         fontInter.variable
       )}
     >
+      <Head>
+        <link
+          rel="canonical"
+          href="https://namviek.com"
+          key="canonical"
+        />
+      </Head>
+
       <body className="h-screen bg-black">{children}</body>
     </html>
   )
