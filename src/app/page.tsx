@@ -1,3 +1,4 @@
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import AboutUsSection from "@/containers/AboutUs";
 import CostSection from "@/containers/CostSection";
 import DownloadSection from "@/containers/DownloadSection";
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutUsSection />
       <Footer />
       <Embeded />
+      <GoogleAnalytics />
     </main>
   )
 }
