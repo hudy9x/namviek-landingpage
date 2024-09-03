@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     template: 'Namviek',
     default: 'Namviek - The open source task manager for super tiny teams',
   },
+  keywords: ['open-source', 'project manager', 'Next.js'],
+  creator: 'hudy9x',
+  openGraph: {
+    images: '/open-graph-image.jpg',
+  },
+
   description:
     'Do not mind the cost any more, just do your work now. Namviek has a lot of features that helps you run your team with a low budget',
 }
