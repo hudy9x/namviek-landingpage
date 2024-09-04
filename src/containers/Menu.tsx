@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
 export default function Menu() {
-  return <div className="flex justify-center pb-[50px]">
+  return <div className="flex justify-center">
     <nav id="menu">
       <Link href="/"><Image src={"/icon.png"} width={24} height={24} alt="Namviek Logo" /></Link>
       <Link href="/">Home</Link>

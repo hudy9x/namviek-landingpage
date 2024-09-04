@@ -10,10 +10,10 @@ function TrustBy() {
     'https://i.pravatar.cc/150?img=6',
 
   ]
-  return <div className="trust-by">
+  return <div className="trust-by mt-[32px] space-y-2">
     <div className="text-center ml-4">
       {images.map(userPhoto => {
-        return <img key={userPhoto} className="w-9 h-9 inline-block -ml-4 rounded-full border-4 border-black" src={userPhoto} />
+        return <img key={userPhoto} className="w-9 h-9 inline-block -ml-4 rounded-full border-4 border-black" src={userPhoto} alt="Avatar developer" />
       })}
     </div>
 
@@ -23,18 +23,18 @@ function TrustBy() {
       })}
 
     </div>
-    <p className="text-center text-[12px] ">
+    <p className="text-center text-[12px] second-color">
       Loved by +1900 developers
     </p>
   </div>
 }
 export default function HeroSection() {
-  return <section id="hero">
-    <h1 className="text-6xl font-bold text-center">
-      Don't mind the cost<br />
+  return <section id="hero" className="mt-[94px]">
+    <h1 className="h1 text-center">
+      {"Don't mind the cost"}<br />
       Just do the work
     </h1>
-    <p className="text-center">The open-source project management tool for super<br />tiny teams with a lot of built in features</p>
+    <p className="pa1 text-center mt-[25px]">The open-source project management tool for super<br />tiny teams with a lot of built in features</p>
     <TrustBy />
 
   </section>
