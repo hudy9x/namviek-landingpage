@@ -1,5 +1,5 @@
 {
-  "name": "tailwindui-salient",
+  "name": "namviek-landingpage",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,32 +8,20 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
-    "@headlessui/tailwindcss": "^0.2.0",
-    "@react-three/fiber": "^8.16.2",
-    "@tailwindcss/forms": "^0.5.3",
-    "@types/node": "^20.10.8",
-    "@types/react": "^18.2.47",
-    "@types/react-dom": "^18.2.18",
-    "autoprefixer": "^10.4.12",
-    "clsx": "^2.1.0",
-    "framer-motion": "^10.16.4",
-    "next": "^14.0.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^5.1.0",
-    "tailwind-merge": "^2.2.2",
-    "tailwindcss": "^3.4.1",
-    "three": "^0.163.0",
-    "typescript": "^5.3.3"
+    "next": "14.2.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "eslint-config-next": "^14.0.4",
-    "prettier": "^3.1.1",
-    "prettier-plugin-tailwindcss": "^0.5.11",
-    "sharp": "0.33.1"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

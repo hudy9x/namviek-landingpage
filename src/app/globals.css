@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+  background: #060211;
+}
+
+#menu {
+  @apply flex items-center justify-center gap-8 px-6;
+  @apply bg-black/50 border-2 py-3 rounded-xl text-sm;  
+  /* width: 350px; */
+  border-color: #503B8C;
+  box-shadow: 1px 9px 16px rgba(8, 30, 85, 0.34);
+}
+
+.cta-btn{
+  @apply uppercase text-sm text-gray-900 px-3 py-2 font-bold;
+  background: #EEE9FF;
+  border-radius: 8px;
+}

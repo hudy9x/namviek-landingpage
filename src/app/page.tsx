@@ -1,23 +1,16 @@
-import GoogleAnalytics from "@/components/GoogleAnalytics";
-import AboutUsSection from "@/containers/AboutUs";
-import CostSection from "@/containers/CostSection";
-import DownloadSection from "@/containers/DownloadSection";
-import FeatureSection from "@/containers/FeatureSection";
-import Footer from "@/containers/Footer";
-import Header from "@/containers/Header";
+import CTAButton from "@/components/CTAButton";
+import TopBackground from "@/components/TopBackground";
 import HeroSection from "@/containers/HeroSection";
+import Menu from "@/containers/Menu";
 
 export default function Home() {
   return (
-    <main className="main-container relative">
-      <Header />
+    <>
+
+      <TopBackground />
+      <Menu />
       <HeroSection />
-      <FeatureSection />
-      <CostSection />
-      <DownloadSection />
-      <AboutUsSection />
-      <Footer />
-      <GoogleAnalytics />
-    </main>
-  )
+      <CTAButton />
+    </>
+  );
 }
