@@ -26,17 +26,7 @@ export default function Card({ className, type = 'red', height = 450, children }
   const classes = ["card"]
 
   className && classes.push(className)
-
-  switch (type) {
-    case 'red':
-      classes.push('card-bg-red')
-      break;
-
-    case 'sky':
-      classes.push('card-bg-sky')
-      break;
-
-  }
+  type && classes.push(`card-bg-${type}`)
 
   return <div className={classes.join(" ")} style={{ height }}>
     {children}
