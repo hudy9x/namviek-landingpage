@@ -1,3 +1,4 @@
+import CTAButton from "@/components/CTAButton"
 import { TiStar } from "react-icons/ti"
 
 function TrustBy() {
@@ -28,15 +29,23 @@ function TrustBy() {
     </p>
   </div>
 }
+
+function HeroBackground() {
+  return <div className="mt-[63px] hero-background">
+    <img src="/hero-section.png" alt="Hero image" />
+  </div>
+}
+
 export default function HeroSection() {
-  return <section id="hero" className="mt-[94px]">
-    <h1 className="h1 text-center">
+  return <section id="hero" className="mt-[94px] flex flex-col items-center">
+    <h1 className="h1">
       {"Don't mind the cost"}<br />
       Just do the work
     </h1>
-    <p className="pa1 text-center mt-[25px]">The open-source project management tool for super<br />tiny teams with a lot of built in features</p>
+    <p className="pa1 mt-[25px]">The open-source project management tool for super<br />tiny teams with a lot of built in features</p>
     <TrustBy />
-
+    <CTAButton />
+    <HeroBackground />
   </section>
 }
 
