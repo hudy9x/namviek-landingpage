@@ -132,6 +132,7 @@
 body {
   color: white;
   background: #060211;
+  /* overflow-x: hidden; */
 }
 
 #menu {
