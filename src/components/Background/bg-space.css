@@ -1,0 +1,55 @@
+/* bg-space */
+.bg-space {
+  position: relative;
+  width: 2081px;
+  height: 630.02px;
+}
+
+/* left-ellipse */
+.bg-space .left-ellipse {
+  position: absolute;
+  width: 1138.4px;
+  height: 190.88px;
+  left: 160px;
+  top: 195.64px;
+
+  background: #001F8F;
+  filter: blur(200px);
+  transform: matrix(0.99, -0.13, 0.21, 0.98, 0, 0);
+}
+
+/* right-ellipse */
+.bg-space .right-ellipse {
+  position: absolute;
+  width: 1131.4px;
+  height: 180.41px;
+  left: 959.42px;
+  top: 0px;
+
+  background: #BC102F;
+  filter: blur(200px);
+  transform: matrix(0.98, 0.2, -0.31, 0.95, 0, 0);
+}
+
+/* center-ellipse */
+.bg-space .center-ellipse {
+  position: absolute;
+  width: 1063px;
+  height: 323.73px;
+  left: 573px;
+  top: 87.29px;
+
+  background: #3D6B68;
+  filter: blur(124.3px);
+}
+
+/* cover-gradient */
+.bg-space .cover-gradient {
+  position: absolute;
+  width: 2081px;
+  height: 562.56px;
+  left: 0px;
+  top: 67.46px;
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 25.6%, #060211 68.6%, #060211 100%);
+}

@@ -1,3 +1,5 @@
+import './style.css'
+
 import { ReactNode } from "react"
 
 interface ICardTitle {
@@ -18,15 +20,17 @@ export const CardTitle = function({ title, desc, icon }: ICardTitle) {
 interface ICard {
   className?: string,
   type?: 'red' | 'sky' | 'ocean' | 'hell' | 'aurora'
+  border?: 'normal' | 'bold'
   height?: number,
   children: ReactNode
 }
 
-export default function Card({ className, type = 'red', height = 450, children }: ICard) {
+export default function Card({ className, border = 'normal', type = 'red', height = 450, children }: ICard) {
   const classes = ["card"]
 
   className && classes.push(className)
   type && classes.push(`card-bg-${type}`)
+  border === 'bold' && classes.push('border-bold')
 
   return <div className={classes.join(" ")} style={{ height }}>
     {children}
