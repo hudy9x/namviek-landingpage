@@ -1,0 +1,51 @@
+.tech-logo {
+  @apply w-[72px] h-[72px] rounded-full border-2;
+  @apply flex items-center justify-center;
+  border-color: rgba(86, 67, 90, 0.82);
+  background: linear-gradient(180deg, #0E0526 0%, #281166 100%);
+  box-shadow: 0px 18px 36.8px #17093B;
+}
+
+.tech-brand {
+  @apply relative;
+}
+
+.tech-brand-item {
+  @apply absolute flex items-center justify-center;
+  width: 63px;
+  height: 63px;
+  background: #0B091B;
+  box-shadow: 0px 18px 36.8px #000000;
+  border-radius: 50%;
+}
+
+.tech-item-container {
+  @apply flex items-center justify-center;
+  width: 52px;
+  height: 52px;
+  background:#1C152F;
+  border: 1px solid #2B2049;
+  border-radius: 50%;
+}
+
+
+.tech-brand {
+  /* animation: tech-brand-circles 30s linear infinite */
+}
+
+@keyframes tech-brand-circles {
+  0% {
+    transform: translateZ(0) rotate(0)
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateZ(0) rotate(.5turn)
+  }
+
+  to {
+    opacity: .32;
+    transform: translateZ(0) rotate(1turn)
+  }
+}
+

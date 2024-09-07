@@ -1,5 +1,19 @@
+import './style.css'
 import BgBrand from "@/components/Background/BgBrand";
 import SpinningCircle from "@/components/SpinningCircle";
+import TechBrand from './TechBrand';
+import TechSatellite from './TechSatellite';
+
+function TechLogo() {
+  return <div className="absolute" style={{
+    top: 'calc(50% - 36px)',
+    left: 'calc(50% - 36px)',
+  }}>
+    <div className="tech-logo">
+      <img src="/Logo.svg" alt="Logo" />
+    </div>
+  </div>
+}
 
 export default function Technology() {
   return <section id="technology" className="relative w-[1242px] mx-auto mt-[345px]">
@@ -14,6 +28,9 @@ export default function Technology() {
         <div className="w-full h-full opacity-80" style={{ backgroundColor: 'rgba(6, 2, 17, 1)' }}></div>
         <div className="flex items-center justify-center w-full h-full absolute top-0 left-0">
           <SpinningCircle />
+          <TechLogo />
+          <TechBrand />
+          <TechSatellite />
         </div>
       </div>
     </div>
