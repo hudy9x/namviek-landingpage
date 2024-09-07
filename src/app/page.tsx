@@ -20,6 +20,7 @@ export default function Home() {
       <FeatureSection4 />
       <Technology />
       <Setup />
+      <Setup />
     </>
   );
 }
