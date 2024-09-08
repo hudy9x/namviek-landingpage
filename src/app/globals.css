@@ -29,18 +29,39 @@
     color: #FFFFFF;
   }
 
-  .hl1 {
+  .h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #EEE9FC;
+  }
+
+  .hl1, .hl2, .hl3, .hl4 {
     @apply uppercase;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
 
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .hl1 {
     background: linear-gradient(90deg, #FFC075 0%, #F99090 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  }
+
+  .hl2{
+    background: linear-gradient(90deg, #58DFFD 0%, #BEF990 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hl3 {
+    background: linear-gradient(90deg, #58B7FD 0%, #F99090 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .pa1 {
@@ -149,6 +170,12 @@ body {
   border-radius: 8px;
 }
 
+.cta-btn2 {
+  @apply shadow rounded-md text-base font-semibold px-4 py-2;
+  background: linear-gradient(90deg, #9B3737 0%, #D94181 100%);
+  border: 1px solid #E34E86;
+}
+
 .hero-background {
   @apply relative;
 }
@@ -158,7 +185,16 @@ body {
   content: '';
 
   background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(6, 2, 17, 0) 23.5%, rgba(6, 2, 17, 0.91) 60%, #060211 100%);
+}
 
+.section-title {
+  @apply text-base font-semibold;
+
+  background: linear-gradient(90deg, #B04398 0%, #D25063 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 
 }
 

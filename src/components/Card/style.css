@@ -42,6 +42,10 @@
   /* background-size: 560px; */
 }
 
+.card-bg-darkblur {
+  background-color: rgba(0,0,0,.6)
+}
+
 .card-title {
   @apply absolute z-20 bottom-0 left-0 rounded-b-xl w-full;
   @apply flex items-end;

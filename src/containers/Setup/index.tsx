@@ -4,7 +4,7 @@ import Terminal from './Terminal'
 export default function Setup() {
   return <section id="setup">
     <div className="flex flex-col items-center">
-      <h6 className="hl1">deployments</h6>
+      <h6 className="hl3">deployments</h6>
       <h2 className="h2 mt-[17px]">Run Namviek on<br />
         your own local machine
       </h2>

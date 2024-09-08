@@ -8,6 +8,7 @@ import Menu from "@/containers/Menu";
 import Pricing from "@/containers/Pricing";
 import Setup from "@/containers/Setup";
 import Technology from "@/containers/Technology";
+import Testimonials from "@/containers/Testimonials";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Technology />
       <Setup />
       <Pricing />
+      <Testimonials />
     </>
   );
 }

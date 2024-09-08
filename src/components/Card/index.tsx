@@ -19,7 +19,7 @@ export const CardTitle = function({ title, desc, icon }: ICardTitle) {
 
 interface ICard {
   className?: string,
-  type?: 'red' | 'sky' | 'ocean' | 'hell' | 'aurora' | 'transparent'
+  type?: 'red' | 'darkblur' | 'sky' | 'ocean' | 'hell' | 'aurora' | 'transparent'
   border?: 'normal' | 'bold'
   height?: number,
   children: ReactNode
