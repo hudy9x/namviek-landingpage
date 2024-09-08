@@ -1,6 +1,6 @@
 .terminal {
-  @apply w-[739px] py-4 px-5;
-  @apply bg-black/70 border rounded-lg shadow-lg;
+  @apply w-[850px] py-6 px-8;
+  @apply bg-black/70 border rounded-xl shadow-lg;
   border-color: #433B50;
 }
 
@@ -10,15 +10,31 @@
 
 .terminal-btn {
   @apply w-3 h-3 rounded-full;
-  @apply border;
+  @apply border transition-all;
   border-color: #58516A;
   background: #363243;
 }
+
+.terminal-btn:nth-child(1):hover { background: red !important; }
+.terminal-btn:nth-child(2):hover { background: yellow !important; }
+.terminal-btn:nth-child(3):hover { background: green !important; }
 
 .terminal-content {
   @apply mt-4 space-y-2 pb-5;
 }
 
 .terminal-content .line {
-  @apply flex items-center gap-2;
+  @apply flex text-gray-300 items-center gap-2;
+  font-size: 21px;
 }
+
+.terminal-content .code-copy {
+  @apply p-1.5 hover:bg-gray-700 active:bg-gray-800 w-7 h-7 rounded-md;
+  @apply opacity-0 transition-all cursor-pointer;
+}
+
+.terminal-content .line:hover .code-copy {
+  @apply opacity-100
+}
+
+

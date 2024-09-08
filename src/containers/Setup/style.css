@@ -1,0 +1,15 @@
+#setup {
+  @apply relative w-[1242px] mx-auto mt-[345px];
+  padding-bottom: 210px;
+}
+
+#setup:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url('/bg-deployment.png');
+  background-position: center 150px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}

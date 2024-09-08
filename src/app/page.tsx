@@ -5,6 +5,7 @@ import FeatureSection3 from "@/containers/FeatureSection3";
 import FeatureSection4 from "@/containers/FeatureSection4";
 import HeroSection from "@/containers/HeroSection";
 import Menu from "@/containers/Menu";
+import Pricing from "@/containers/Pricing";
 import Setup from "@/containers/Setup";
 import Technology from "@/containers/Technology";
 
@@ -20,7 +21,7 @@ export default function Home() {
       <FeatureSection4 />
       <Technology />
       <Setup />
-      <Setup />
+      <Pricing />
     </>
   );
 }
