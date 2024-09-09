@@ -4,6 +4,7 @@ import FeatureSection1 from "@/containers/FeatureSection1";
 import FeatureSection2 from "@/containers/FeatureSection2";
 import FeatureSection3 from "@/containers/FeatureSection3";
 import FeatureSection4 from "@/containers/FeatureSection4";
+import Footer from "@/containers/Footer";
 import HeroSection from "@/containers/HeroSection";
 import Menu from "@/containers/Menu";
 import Pricing from "@/containers/Pricing";
@@ -26,6 +27,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <Comparison />
+      <Footer />
     </>
   );
 }
