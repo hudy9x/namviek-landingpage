@@ -1,0 +1,20 @@
+.cal-section {
+  @apply rounded-xl px-3 py-3;
+  background: rgba(18, 12, 31, 0.28);
+}
+
+.cal-section h3 {
+  @apply text-lg uppercase font-bold;
+  &.hightlight {
+    color: #ECFE7B;
+  }
+}
+
+.cal-section small{
+  @apply text-sm font-bold text-yellow-300;
+}
+
+.cal-section p {
+  @apply text-[12px];
+  color: #C7C7C7;
+}

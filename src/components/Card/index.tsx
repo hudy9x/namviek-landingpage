@@ -20,17 +20,23 @@ export const CardTitle = function({ title, desc, icon }: ICardTitle) {
 interface ICard {
   className?: string,
   type?: 'red' | 'darkblur' | 'sky' | 'ocean' | 'hell' | 'aurora' | 'transparent'
-  border?: 'normal' | 'bold'
+  border?: 'normal' | 'bold' | 'lighter'
+  flexSize?: boolean
   height?: number,
   children: ReactNode
 }
 
-export default function Card({ className, border = 'normal', type = 'red', height = 450, children }: ICard) {
+export default function Card({ className,
+  flexSize = false,
+  border = 'normal', type = 'red',
+  height = 450, children }: ICard) {
   const classes = ["card"]
 
   className && classes.push(className)
   type && classes.push(`card-bg-${type}`)
   border === 'bold' && classes.push('border-bold')
+  border === 'lighter' && classes.push('card-border-lighter')
+  flexSize && classes.push('card-size-flex')
 
   return <div className={classes.join(" ")} style={{ height }}>
     {children}

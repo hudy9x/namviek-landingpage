@@ -1,0 +1,19 @@
+
+.cal-input-bg {
+  background: #120C1F
+}
+
+.cal-input-border {
+  border-color: #3D3D54
+}
+
+.cal-form-control label {
+  @apply text-sm;
+}
+
+.cal-input {
+  @apply px-3 py-2 rounded-lg text-sm;
+  color: #ACA5BA;
+  background: #120C1F;
+  border: 1px solid #3D3D54
+}

@@ -1,9 +1,23 @@
 
 .card {
   @apply relative rounded-xl overflow-hidden;
-  min-width: 400px;
+  /* min-width: 400px; */
   height: 450px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-no-min-width {
+  /* width */
+}
+
+.card.card-size-flex {
+  min-width: 100%;
+  height: 100% !important;
+}
+
+.card.card-border-lighter {
+  border-width: 3px;
+  border-color: #443E53;
 }
 
 .card.border-bold {
