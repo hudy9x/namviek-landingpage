@@ -1,4 +1,5 @@
 import CTAButton from "@/components/CTAButton"
+import GithubStar from "@/components/GithubStar"
 import { TiStar } from "react-icons/ti"
 
 function TrustBy() {
@@ -25,7 +26,7 @@ function TrustBy() {
 
     </div>
     <p className="text-center text-[12px] second-color">
-      Loved by +1900 developers
+      Loved by <GithubStar link="https://api.github.com/repos/hudy9x/namviek" /> developers
     </p>
   </div>
 }

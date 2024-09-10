@@ -1,3 +1,4 @@
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import TopBackground from "@/components/TopBackground";
 import CallToAction from "@/containers/CallToAction";
 import Comparison from "@/containers/Comparison";
@@ -30,6 +31,7 @@ export default function Home() {
       <Comparison />
       <CallToAction />
       <Footer />
+      <GoogleAnalytics />
     </>
   );
 }
