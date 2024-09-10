@@ -51,7 +51,7 @@ export default function Footer() {
         {bottomMenus.map((menu, mindex) => {
           const { menus } = menu
           return <div key={mindex} className="w-[120px]">
-            <h4 className="font-bold text-lg">{menu.title}</h4>
+            <h4 className="font-semibold text-lg">{menu.title}</h4>
             <nav className="flex flex-col gap-2 mt-3">
               {menus.map((item, index) => {
                 return <Link key={index}
