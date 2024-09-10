@@ -2,6 +2,7 @@ import BgSpace from '@/components/Background/BgSpace'
 import './style.css'
 import Link from 'next/link'
 import Calculator from './Calculator'
+import { IoIosArrowRoundForward } from 'react-icons/io'
 
 export default function Comparison() {
   return <section id="comparison" className="relative w-[1242px] mx-auto mt-[345px]">
@@ -15,7 +16,7 @@ export default function Comparison() {
 
       <Calculator />
 
-      <Link href={'https://gekki'} className='mt-[35px]'>Why is this so affordable ?</Link>
+      <Link href={'https://gekki'} className='mt-[35px] flex items-center gap-4 text-gray-400'> <IoIosArrowRoundForward className='w-12 h-7 text-white px-3 py-0.5 rounded-full bg-white/30' />Why is this so affordable ?</Link>
     </div>
 
     <div className="absolute top-[342px] -left-[43%] -z-10">

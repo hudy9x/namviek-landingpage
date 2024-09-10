@@ -36,10 +36,14 @@ export default function Footer() {
           <img src="/Logo.svg" alt="Logo Namviek" />
           <span className="font-bold">Namviek</span>
         </div>
-        <p className="second-color text-sm leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pulvinar, lacus condimentum sodales lobortis, leo sem commodo nulla, et lobortis s</p>
-        <div className="flex items-center gap-2">
-          <FaGithub />
-          <FaDiscord />
+        <p className="second-color text-sm leading-6">The open-source solution for cost-effective Project management.</p>
+        <div className="flex items-center gap-2 pt-2">
+          <Link href="https://github.com/hudy9x/namviek" target="_blank" className="text-gray-200 hover:text-gray-400 transition-all">
+            <FaGithub />
+          </Link>
+          <Link href="https://discord.gg/XbYtDQYFPZ" target="_blank" className="text-gray-200 hover:text-gray-400 transition-all">
+            <FaDiscord />
+          </Link>
         </div>
       </aside>
 

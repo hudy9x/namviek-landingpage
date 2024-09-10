@@ -1,4 +1,5 @@
 import TopBackground from "@/components/TopBackground";
+import CallToAction from "@/containers/CallToAction";
 import Comparison from "@/containers/Comparison";
 import FeatureSection1 from "@/containers/FeatureSection1";
 import FeatureSection2 from "@/containers/FeatureSection2";
@@ -27,6 +28,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <Comparison />
+      <CallToAction />
       <Footer />
     </>
   );
