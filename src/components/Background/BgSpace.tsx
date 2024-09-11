@@ -1,5 +1,6 @@
 import './bg-space.css'
 export default function BgSpace() {
+  return <></>
   return <div className="bg-space">
     <div className="left-ellipse"></div>
     <div className="right-ellipse"></div>

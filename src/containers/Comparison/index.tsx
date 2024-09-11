@@ -5,7 +5,7 @@ import Calculator from './Calculator'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 
 export default function Comparison() {
-  return <section id="comparison" className="relative w-[1242px] mx-auto mt-[345px]">
+  return <section id="comparison" className="relative w-full sm:w-[1242px] mx-auto mt-[200px] sm:mt-[345px]">
     <div className="flex flex-col items-center">
       <h6 className="hl2">comparison</h6>
       <h2 className="h2 mt-[17px]">Reduce the cost<br />

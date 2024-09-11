@@ -64,7 +64,7 @@ export default function CalInput() {
   console.log(price, member, 12)
 
   return <Card type='darkblur'
-    className='w-[620px] p-8 space-y-4' height={348} border='lighter'>
+    className='w-[95%] sm:w-[620px] p-8 space-y-4' height={348} border='lighter'>
     <div className='cal-form-control'>
       <label>Number of members</label>
       <div className='flex items-center gap-4'>
@@ -102,13 +102,14 @@ export default function CalInput() {
           console.log(ev.target.value)
           setPrice(parseFloat(ev.target.value))
         }}>
-          {pricingOptions.map(option => {
-            return <option value={option.value} selected={option.value === price}>{option.title}</option>
+          {pricingOptions.map((option, oindex) => {
+            return <option value={option.value} key={oindex} selected={option.value === price}>{option.title}</option>
           })}
         </select>
       </div>
       <div className='cal-form-control'>
-        <label>Annual cost with Jira for {member} members</label>
+        <label className='hidden sm:block'>Annual cost with Jira for {member} members</label>
+        <label className='sm:hidden'>Annual cost</label>
         <input readOnly value={`$${Math.round(price * 10 * member)}`} className='cal-input mt-3 w-full' />
       </div>
     </div>

@@ -6,7 +6,7 @@ export default function CalDisplay() {
   const { price } = useCalculator()
   const saving = price - 100
   const percent = saving / price * 100
-  return <Card type='sky' height={345} className="w-[291px] p-6">
+  return <Card type='sky' height={345} className="w-[95%] sm:w-[291px] p-6">
     <h2 className="uppercase text-[11px] font-semibold">WE DID THE MATH FOR YOU</h2>
 
     <div className='mt-[17px] space-y-4'>

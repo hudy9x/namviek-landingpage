@@ -67,8 +67,8 @@ export default function Testimonials() {
       <p className="pa1 mt-[37px]">Easy to setup Namviek on local machine or<br />
         you can run it on your own server with a tiny budget</p>
 
-      <div className="mt-28 w-[1200px] flex gap-5">
-        <div className='grid grid-cols-1 gap-5'>
+      <div className="mt-28 w-[95%] sm:w-[1200px] flex flex-col sm:flex-row gap-5">
+        <div className='grid grid-cols-2 sm:grid-cols-1 gap-5'>
           {comments.map((cm, cindex) => {
             const { comment, avatar, name, link } = cm
             const nickname = name.split(/\s+/).join('_').toLowerCase()
@@ -112,7 +112,7 @@ export default function Testimonials() {
           })}
         </div>
 
-        <div className='grid grid-cols-1 gap-5'>
+        <div className='grid grid-cols-2 sm:grid-cols-1 gap-5'>
           {comments3.map((cm, cindex) => {
             const { comment, avatar, name, link } = cm
             const nickname = name.split(/\s+/).join('_').toLowerCase()

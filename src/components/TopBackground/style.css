@@ -1,31 +1,22 @@
+.top-bg-container {
+  @apply relative w-[813px] h-[666px];
+}
 .top-bg-1 {
-  position: absolute;
-  width: 547px;
-  height: 460px;
-  left: 318px;
-  top: -293px;
+  @apply absolute w-[547px] h-[460px] left-[318px] -top-[293px];
 
   background: #4200FF;
   filter: blur(200px);
 }
 
 .top-bg-2 {
-  position: absolute;
-  width: 363.81px;
-  height: 363.81px;
-  left: 204.19px;
-  top: -153px;
+  @apply absolute w-[363px] h-[363px] left-[204px] -top-[153px];
 
   background: linear-gradient(180deg, #F22FB0 0%, rgba(245, 138, 37, 0) 100%, #7061A3 100%);
   filter: blur(50px);
 }
 
 .top-bg-3{
-  position: absolute;
-  width: 497.2px;
-  height: 497.2px;
-  left: 52px;
-  top: -123.29px;
+  @apply absolute w-[497px] h-[497px] left-[52px] -top-[123px];
 
   background: linear-gradient(180deg, #FF7BCA 0%, rgba(255, 197, 111, 0.46) 100%);
   filter: blur(100px);

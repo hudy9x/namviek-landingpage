@@ -145,13 +145,12 @@
 }
 
 body {
-  color: white;
+  @apply text-white overflow-x-hidden;
   background: #060211;
-  overflow-x: hidden;
 }
 
 .menu-wrapper {
-  @apply fixed top-5 sm:top-14 w-full z-20;
+  @apply fixed top-5 sm:top-14 w-screen z-20;
 }
 
 #menu {
