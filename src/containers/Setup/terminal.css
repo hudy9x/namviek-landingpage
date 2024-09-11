@@ -1,5 +1,5 @@
 .terminal {
-  @apply w-[850px] py-6 px-8;
+  @apply sm:w-[850px] py-6 px-8;
   @apply bg-black/70 border rounded-xl shadow-lg;
   border-color: #433B50;
 }

@@ -8,25 +8,19 @@
 
 @layer utilities {
   .h1 {
+    @apply text-4xl leading-normal sm:text-6xl sm:leading-[79px] text-center;
     font-weight: 600;
-    font-size: 65px;
-    /* Don’t mind the cost Just do the work */
 
     background: linear-gradient(96.14deg, #FFFFFF 17.18%, #9389B7 82.82%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    line-height: 79px;
-
   }
 
   .h2 {
+    @apply text-2xl sm:text-5xl leading-tight text-center text-white;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    text-align: center;
-    color: #FFFFFF;
   }
 
   .h4 {
@@ -37,10 +31,9 @@
   }
 
   .hl1, .hl2, .hl3, .hl4 {
-    @apply uppercase;
+    @apply uppercase text-xs sm:text-lg;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    /* line-height: 22px; */
     /* identical to box height */
 
     background-clip: text;
@@ -65,13 +58,14 @@
   }
 
   .pa1 {
+    @apply text-base sm:text-2xl;
     text-align: center;
-    font-size: 22px;
+    /* font-size: 22px; */
     color: var(--second-color);
   }
 
   .pa2 {
-    font-size: 18px;
+    @apply text-sm sm:text-lg;
     color: var(--second-color);
   }
 
@@ -156,12 +150,20 @@ body {
   overflow-x: hidden;
 }
 
+.menu-wrapper {
+  @apply fixed top-5 sm:top-14 w-full z-20;
+}
+
 #menu {
   @apply flex items-center justify-center gap-8 px-6;
-  @apply bg-black/50 border py-3 rounded-xl text-sm;  
-  /* width: 350px; */
+  @apply bg-black/70 backdrop-blur-md border rounded-xl text-sm;  
+
   border-color: #503B8C;
   box-shadow: 1px 9px 16px rgba(8, 30, 85, 0.34);
+}
+
+#menu a {
+  @apply text-gray-400 hover:text-gray-200 py-3 transition-all;
 }
 
 .cta-btn1{
@@ -177,7 +179,7 @@ body {
 }
 
 .hero-background {
-  @apply relative;
+  @apply relative px-3 sm:px-0;
 }
 
 .hero-background:before {

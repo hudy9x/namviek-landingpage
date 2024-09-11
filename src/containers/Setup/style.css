@@ -1,5 +1,5 @@
 #setup {
-  @apply relative w-[1242px] mx-auto mt-[345px];
+  @apply relative sm:w-[1242px] mx-auto mt-[200px] sm:mt-[345px];
   padding-bottom: 210px;
 }
 

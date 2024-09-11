@@ -11,7 +11,7 @@ export default function Setup() {
       <p className="pa1 mt-[37px]">If you are familiar with Docker<br />
         run the following command to build and use the app</p>
 
-      <div className="mt-[115px] ">
+      <div className="mt-[50px] sm:mt-[115px] w-[95%] sm:w-[1200px] flex justify-center ">
         <Terminal />
       </div>
     </div>
@@ -19,8 +19,6 @@ export default function Setup() {
     <div className="absolute top-[350px] left-1/2 -translate-x-1/2 -z-10">
 
     </div>
-
-
 
   </section>
 }

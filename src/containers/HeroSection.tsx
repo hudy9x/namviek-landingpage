@@ -12,10 +12,10 @@ function TrustBy() {
     'https://i.pravatar.cc/150?img=6',
 
   ]
-  return <div className="trust-by mt-[32px] space-y-2">
+  return <div className="trust-by mt-[22px] sm:mt-[32px] space-y-2">
     <div className="text-center ml-4">
       {images.map(userPhoto => {
-        return <img key={userPhoto} className="w-9 h-9 inline-block -ml-4 rounded-full border-4 border-black" src={userPhoto} alt="Avatar developer" />
+        return <img key={userPhoto} className="w-7 h-7 sm:w-9 sm:h-9 inline-block -ml-3 sm:-ml-4 rounded-full border-4 border-black" src={userPhoto} alt="Avatar developer" />
       })}
     </div>
 
@@ -32,13 +32,13 @@ function TrustBy() {
 }
 
 function HeroBackground() {
-  return <div className="mt-[63px] hero-background">
+  return <div className="mt-[32px] sm:mt-[63px] hero-background">
     <img src="/hero-section.png" alt="Hero image" />
   </div>
 }
 
 export default function HeroSection() {
-  return <section id="hero" className="mt-[94px] flex flex-col items-center">
+  return <section id="hero" className="mt-[32px] sm:mt-[94px] flex flex-col items-center">
     <h1 className="h1 text-center">
       {"Don't mind the cost"}<br />
       Just do the work
