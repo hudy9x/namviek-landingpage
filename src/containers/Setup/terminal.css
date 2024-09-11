@@ -1,5 +1,5 @@
 .terminal {
-  @apply sm:w-[850px] py-6 px-8;
+  @apply sm:w-[850px] px-6 py-4 sm:py-6 sm:px-8;
   @apply bg-black/70 border rounded-xl shadow-lg;
   border-color: #433B50;
 }
@@ -20,12 +20,11 @@
 .terminal-btn:nth-child(3):hover { background: green !important; }
 
 .terminal-content {
-  @apply mt-4 space-y-2 pb-5;
+  @apply mt-4 space-y-1 sm:space-y-2 pb-5;
 }
 
 .terminal-content .line {
-  @apply flex text-gray-300 items-center gap-2;
-  font-size: 21px;
+  @apply flex text-gray-300 items-center gap-2 text-base sm:text-xl;
 }
 
 .terminal-content .code-copy {

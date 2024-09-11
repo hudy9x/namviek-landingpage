@@ -21,8 +21,8 @@ export default function Pricing() {
       </h2>
       <p className="pa1 mt-[37px]">Namviek support to deploy to popular platforms<br /> such as AWS Lightsail, Digital Ocean, Render.com, Vercel, Netlify</p>
 
-      <div className="mt-28 flex items-center gap-6">
-        <Card type='darkblur' className='p-10 w-[648px]' height={400}>
+      <div className="mt-14 sm:mt-28 flex flex-col sm:flex-row items-center gap-6">
+        <Card type='darkblur' className='p-10 w-[95%] sm:w-[648px]' height={400}>
           <h2 className='font-semibold text-xl'>Lifetime membership</h2>
           <p className='text-[17px] mt-6 second-color'>Enjoy unlimited access to our codebase-based project management tool, tailored to your specific needs.</p>
           <h3 className='flex items-center gap-6 mt-6'>
@@ -43,7 +43,7 @@ export default function Pricing() {
           <div className='text-sm second-color mt-6'>{`See all what's in the pack`}</div>
 
         </Card>
-        <Card className='p-10 flex flex-col gap-6 justify-center text-center' height={400}>
+        <Card className='w-[95%] sm:w-[320px] p-10 flex flex-col gap-6 justify-center text-center' height={400}>
           <p className='uppercase text-sm font-semibold text-[#EDC6CC]'>pay once, own it forever</p>
           <h2 className='uppercase text-5xl space-x-2 font-extrabold text-[#EEE9FC]'><span>$99</span><small className='text-sm font-normal text-[#DCA9A9]'>USD</small></h2>
           <Link href={'https://polar.sh/namviek'}>

@@ -2,7 +2,6 @@ import Card from '@/components/Card'
 import './style.css'
 import BgBrand from '@/components/Background/BgBrand'
 import Link from 'next/link'
-import { HiOutlineExternalLink } from 'react-icons/hi'
 
 export default function Testimonials() {
   const comments = [
@@ -140,8 +139,6 @@ export default function Testimonials() {
     <div className="absolute top-[350px] left-1/2 -translate-x-1/2 -z-10">
       <BgBrand />
     </div>
-
-
 
   </section>
 }
