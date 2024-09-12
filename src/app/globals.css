@@ -8,7 +8,7 @@
 
 @layer utilities {
   .h1 {
-    @apply text-4xl leading-normal sm:text-6xl sm:leading-[79px] text-center;
+    @apply text-4xl leading-10 sm:text-6xl sm:leading-[79px] text-center;
     font-weight: 600;
 
     background: linear-gradient(96.14deg, #FFFFFF 17.18%, #9389B7 82.82%);
@@ -150,14 +150,14 @@ body {
 }
 
 .menu-wrapper {
-  @apply fixed top-5 sm:top-14 w-screen z-20;
+  @apply fixed top-10 sm:top-14 w-screen z-20;
 }
 
 #menu {
   @apply flex items-center justify-center gap-8 px-6;
   @apply bg-black/70 backdrop-blur-md border rounded-xl text-sm;  
+  @apply border-gray-100/20;
 
-  border-color: #503B8C;
   box-shadow: 1px 9px 16px rgba(8, 30, 85, 0.34);
 }
 

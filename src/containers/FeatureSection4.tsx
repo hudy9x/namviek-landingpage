@@ -39,7 +39,7 @@ export default function FeatureSection4() {
       <div className="mt-[50px] sm:mt-[115px] grid grid-cols-1 sm:grid-cols-3 gap-6">
         {features.map((feat, fIndex) => {
 
-          return <Card type="aurora" key={fIndex} border="bold" className="w-[386px] grid-cols-1" height={225}>
+          return <Card type="darkblur" key={fIndex} border="bold" className="w-[386px] grid-cols-1" height={225}>
             <img src="/feature-view-custom-1.png" alt="Custom view" className="absolute top-[27px] left-[36px]" />
             <CardTitle
               title={feat.title}

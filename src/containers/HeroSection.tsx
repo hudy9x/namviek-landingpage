@@ -38,12 +38,12 @@ function HeroBackground() {
 }
 
 export default function HeroSection() {
-  return <section id="hero" className="mt-[32px] sm:mt-[94px] flex flex-col items-center">
+  return <section id="hero" className="mt-[120px] sm:mt-[150px] flex flex-col items-center">
     <h1 className="h1 text-center">
       {"Don't mind the cost"}<br />
       Just do the work
     </h1>
-    <p className="pa1 mt-[25px]">The open-source project management tool for super<br />tiny teams with a lot of built in features</p>
+    <p className="pa1 w-[300px] sm:w-[600px] mt-[25px]">The open-source project management tool for super tiny teams with a lot of built in features</p>
     <TrustBy />
     <CTAButton />
     <HeroBackground />

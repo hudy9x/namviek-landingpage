@@ -47,11 +47,11 @@ export default function Footer() {
         </div>
       </aside>
 
-      <aside className="flex items-start gap-8 border-t border-gray-900 sm:border-none pt-6 sm:pt-0">
+      <aside className="flex items-start gap-8 w-full sm:w-[400px] border-t border-gray-900 sm:border-none pt-6 sm:pt-0">
         {bottomMenus.map((menu, mindex) => {
           const { menus } = menu
-          return <div key={mindex} className="w-[120px]">
-            <h4 className="font-normal sm:font-semibold text-base sm:text-lg">{menu.title}</h4>
+          return <div key={mindex} className="sm:w-[120px]">
+            <h4 className="uppercase font-normal sm:font-semibold text-xs text-gray-200">{menu.title}</h4>
             <nav className="flex flex-col gap-2 mt-3">
               {menus.map((item, index) => {
                 return <Link key={index}
