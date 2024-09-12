@@ -64,7 +64,7 @@ export default function Footer() {
       </aside>
     </section>
     <section className="py-5 sm:py-10 border-t border-gray-900 mt-3 sm:mt-10">
-      <p className="second-color text-sm sm:text-base">Copyright 2024 All rights reserved - Namviek</p>
+      <p className="second-color text-xs sm:text-base">Copyright 2024 All rights reserved - Namviek</p>
     </section>
   </footer>
 }
