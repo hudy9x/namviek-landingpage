@@ -19,7 +19,7 @@ export default function Pricing() {
       <h2 className="h2 mt-[17px]">Simple no-tricks<br />
         pricing plan
       </h2>
-      <p className="pa1 mt-[37px]">Namviek support to deploy to popular platforms<br /> such as AWS Lightsail, Digital Ocean, Render.com, Vercel, Netlify</p>
+      <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">Pay a one-time fee for lifetime access to the codebase and documentation.</p>
 
       <div className="mt-14 sm:mt-28 flex flex-col sm:flex-row items-center gap-6">
         <Card type='darkblur' className='p-10 w-[95%] sm:w-[648px]' height={400}>
@@ -35,7 +35,7 @@ export default function Pricing() {
           <div className='grid grid-cols-2 gap-4 mt-6'>
             {whatIncludes.map((item, itemIndex) => {
               return <div key={itemIndex} className='flex items-center gap-2'>
-                <FaCircleCheck className='text-[#5DD9F4]' />
+                <FaCircleCheck className='text-[#5DD9F4] w-4 h-4' />
                 <span className='text-sm'>{item}</span>
               </div>
             })}

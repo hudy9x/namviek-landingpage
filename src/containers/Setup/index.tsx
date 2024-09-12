@@ -8,7 +8,7 @@ export default function Setup() {
       <h2 className="h2 mt-[17px]">Run Namviek on<br />
         your own local machine
       </h2>
-      <p className="pa1 mt-[37px]">If you are familiar with Docker<br />
+      <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">If you are familiar with Docker
         run the following command to build and use the app</p>
 
       <div className="mt-[50px] sm:mt-[115px] w-[95%] sm:w-[1200px] flex justify-center ">

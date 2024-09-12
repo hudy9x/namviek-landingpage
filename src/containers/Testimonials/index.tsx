@@ -64,8 +64,7 @@ export default function Testimonials() {
       <h2 className="h2 mt-[17px]">Here’s what developers<br />
         say about Namviek
       </h2>
-      <p className="pa1 mt-[37px]">Easy to setup Namviek on local machine or<br />
-        you can run it on your own server with a tiny budget</p>
+      <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">Discover what developers think of us on Dev.to. Find reviews, discussions, and see how our product can benefit you.</p>
 
       <div className="mt-28 w-[95%] sm:w-[1200px] flex flex-col sm:flex-row gap-5">
         <div className='grid grid-cols-2 sm:grid-cols-1 gap-5'>

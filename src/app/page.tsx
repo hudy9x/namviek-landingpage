@@ -16,26 +16,26 @@ import Testimonials from "@/containers/Testimonials";
 
 export default function Home() {
   return (
-    <>
-      {/* <TopBackground /> */}
+    <main>
+      <TopBackground />
       <Menu />
       <HeroSection />
-      {/* <FeatureSection1 /> */}
-      {/* <FeatureSection2 /> */}
-      {/* <FeatureSection3 /> */}
-      {/* <FeatureSection4 /> */}
-      {/* <Technology /> */}
+      <FeatureSection1 />
+      <FeatureSection2 />
+      <FeatureSection3 />
+      <FeatureSection4 />
+      <Technology />
 
-      {/* <Setup /> */}
-      {/* <Pricing /> */}
+      <Setup />
+      <Pricing />
 
-      {/* <Testimonials /> */}
+      <Testimonials />
 
-      {/* <Comparison /> */}
-    
-      {/* <CallToAction /> */}
+      <Comparison />
+
+      <CallToAction />
       <Footer />
       <GoogleAnalytics />
-    </>
+    </main>
   );
 }

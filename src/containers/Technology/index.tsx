@@ -22,7 +22,7 @@ export default function Technology() {
       <h2 className="h2 mt-[17px]">We built it on popular<br />
         platforms and framework
       </h2>
-      <p className="pa1 mt-[37px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Duis euismod congue massa, ac pellentesque</p>
+      <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">Ultilize free platforms and low budget aws services to reduce the operational cost</p>
 
       <div className="mt-[50px] sm:mt-[115px] w-[95%] sm:w-[890px] h-[468px] relative overflow-hidden rounded-xl border border-white/20">
         <div className="w-full h-full opacity-80" style={{ backgroundColor: 'rgba(6, 2, 17, 1)' }}></div>

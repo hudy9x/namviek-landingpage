@@ -10,7 +10,7 @@ export default function Comparison() {
       <h6 className="hl2">comparison</h6>
       <h2 className="h2 mt-[17px]">Reduce the cost<br />
         by over 90%</h2>
-      <p className="pa1 mt-[37px]">We ultilizes the free tier of popular platforms such as<br />Vercel, Render, AWS to reduce the operational cost</p>
+      <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">{`Let's figure out how much money you can save by doing project management yourself`}</p>
 
       <button className='cta-btn2 w-[300px] mt-[37px]'>Get it now</button>
 

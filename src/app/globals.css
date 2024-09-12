@@ -149,8 +149,12 @@ body {
   background: #060211;
 }
 
+body > main {
+  @apply overflow-x-hidden;
+}
+
 .menu-wrapper {
-  @apply fixed top-10 sm:top-14 w-screen z-20;
+  @apply fixed top-10 sm:top-14 w-screen z-40;
 }
 
 #menu {
