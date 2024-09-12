@@ -66,7 +66,7 @@ export default function Testimonials() {
       </h2>
       <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">Discover what developers think of us on Dev.to. Find reviews, discussions, and see how our product can benefit you.</p>
 
-      <div className="mt-28 w-[95%] sm:w-[1200px] flex flex-col sm:flex-row gap-5">
+      <div className="mt-16 sm:mt-28 w-[95%] sm:w-[1200px] flex flex-col sm:flex-row gap-5">
         <div className='grid grid-cols-2 sm:grid-cols-1 gap-5'>
           {comments.map((cm, cindex) => {
             const { comment, avatar, name, link } = cm

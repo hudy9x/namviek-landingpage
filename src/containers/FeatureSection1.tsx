@@ -3,7 +3,7 @@ import { CgBoard } from "react-icons/cg";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 
 export default function FeatureSection1() {
-  return <section id="feature-1" className="relative sm:w-[1242px] mx-auto">
+  return <section id="features" className="relative pt-[200px] sm:w-[1242px] mx-auto">
     <div className="flex flex-col items-center">
       <h6 className="hl1">app features</h6>
       <h2 className="h2 mt-[17px]">Essential features<br />

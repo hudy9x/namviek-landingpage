@@ -31,7 +31,7 @@
   }
 
   .hl1, .hl2, .hl3, .hl4 {
-    @apply uppercase text-xs sm:text-lg;
+    @apply uppercase whitespace-nowrap text-xs sm:text-lg;
     font-weight: 600;
     /* line-height: 22px; */
     /* identical to box height */
@@ -146,11 +146,13 @@
 
 body {
   @apply text-white overflow-x-hidden;
+  scroll-behavior: smooth;
   background: #060211;
 }
 
 body > main {
   @apply overflow-x-hidden;
+  scroll-behavior: smooth;
 }
 
 .menu-wrapper {

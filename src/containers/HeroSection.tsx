@@ -38,7 +38,7 @@ function HeroBackground() {
 }
 
 export default function HeroSection() {
-  return <section id="hero" className="mt-[120px] flex flex-col items-center">
+  return <section id="hero" className="mt-[70px] sm:mt-[120px] flex flex-col items-center">
     <h1 className="h1 text-center">
       {"Don't mind the cost"}<br />
       Just do the work

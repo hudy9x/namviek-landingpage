@@ -24,7 +24,7 @@ export default function Pricing() {
       <div className="mt-14 sm:mt-28 flex flex-col sm:flex-row items-center gap-6">
         <Card type='darkblur' className='p-10 w-[95%] sm:w-[648px]' height={400}>
           <h2 className='font-semibold text-xl'>Lifetime membership</h2>
-          <p className='text-[17px] mt-6 second-color'>Enjoy unlimited access to our codebase-based project management tool, tailored to your specific needs.</p>
+          <p className='text-sm sm:text-[17px] mt-6 second-color'>Enjoy unlimited access to our codebase-based project management tool, tailored to your specific needs.</p>
           <h3 className='flex items-center gap-6 mt-6'>
             <span className='section-title whitespace-nowrap'>{`
               What's included
@@ -32,11 +32,11 @@ export default function Pricing() {
             <span className='w-full h-[1px] bg-[#2F2351]'></span>
 
           </h3>
-          <div className='grid grid-cols-2 gap-4 mt-6'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6'>
             {whatIncludes.map((item, itemIndex) => {
               return <div key={itemIndex} className='flex items-center gap-2'>
-                <FaCircleCheck className='text-[#5DD9F4] w-4 h-4' />
-                <span className='text-sm'>{item}</span>
+                <FaCircleCheck className='text-[#5DD9F4] w-4 h-4 shrink-0' />
+                <span className='text-xs sm:text-sm'>{item}</span>
               </div>
             })}
           </div>
