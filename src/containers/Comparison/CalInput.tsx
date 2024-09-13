@@ -74,7 +74,7 @@ export default function CalInput() {
             const newMember = parseInt(ev.target.value, 10)
             setMember(newMember)
           }} max={50} step={1} min={10} />
-        <input className='cal-input w-[50px] text-center' value={member} />
+        <input readOnly className='cal-input w-[50px] text-center' value={member} />
       </div>
     </div>
 
@@ -103,7 +103,7 @@ export default function CalInput() {
           setPrice(parseFloat(ev.target.value))
         }}>
           {pricingOptions.map((option, oindex) => {
-            return <option value={option.value} key={oindex} selected={option.value === price}>{option.title}</option>
+            return <option value={option.value} key={oindex} >{option.title}</option>
           })}
         </select>
       </div>
