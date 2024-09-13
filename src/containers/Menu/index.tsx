@@ -1,15 +1,17 @@
 import './style.css'
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { HiOutlineBars3BottomRight } from 'react-icons/hi2';
 import OpenMenuBtn from './OpenMenuBtn';
 import MenuBackdrop from './MenuBackdrop';
 
 export default function Menu() {
   return <div className="menu-wrapper">
     <div className="flex justify-center">
-      <nav id="menu" className='w-[200px] sm:w-auto'>
-        <Link href="/"><img src={"/icon.png"} width={24} height={24} alt="Namviek Logo" /></Link>
+      <nav id="menu" className='w-[300px] sm:w-auto'>
+        <Link href="/" className='flex items-center gap-2'>
+          <img src={"/icon.png"} width={24} height={24} alt="Namviek Logo" />
+          <span className='sm:hidden'>Namviek</span>
+        </Link>
         <nav className='hidden sm:block sm:space-x-8'>
           <Link href="#features">Features</Link>
           <Link href="#setup">Setup</Link>
@@ -18,7 +20,7 @@ export default function Menu() {
           <Link href="#about">About</Link>
         </nav>
 
-        <div className='flex items-center gap-4'>
+        <div className='flex items-center gap-6'>
 
           <OpenMenuBtn />
 

@@ -22,9 +22,9 @@ export default function Pricing() {
       <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">Pay a one-time fee for lifetime access to the codebase and documentation.</p>
 
       <div className="mt-14 sm:mt-28 flex flex-col sm:flex-row items-center gap-6">
-        <Card type='darkblur' className='p-10 w-[95%] sm:w-[648px]' height="h-[400px]">
+        <Card type='darkblur' className='p-10 w-[95%] sm:w-[648px]' height="h-[460px] sm:h-[400px]">
           <h2 className='font-semibold text-xl'>Lifetime membership</h2>
-          <p className='text-sm sm:text-[17px] mt-6 second-color'>Enjoy unlimited access to our codebase-based project management tool, tailored to your specific needs.</p>
+          <p className='text-xs sm:text-[17px] mt-6 second-color'>Enjoy unlimited access to our codebase-based project management tool, tailored to your specific needs.</p>
           <h3 className='flex items-center gap-6 mt-6'>
             <span className='section-title whitespace-nowrap'>{`
               What's included

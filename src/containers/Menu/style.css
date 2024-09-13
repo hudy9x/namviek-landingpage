@@ -5,7 +5,7 @@
 #menu {
   @apply flex items-center justify-between gap-8 px-6;
   @apply bg-black/70 backdrop-blur-md border rounded-xl text-sm;  
-  @apply border-gray-100/20;
+  @apply border-gray-100/20 z-10;
 
   box-shadow: 1px 9px 16px rgba(8, 30, 85, 0.34);
 }
@@ -30,7 +30,7 @@
   @apply sm:hidden z-20 mt-28;
   @apply flex flex-col border rounded-lg border-gray-800;
   /* @apply w-[250px] bg-black backdrop-blur-md transition-all; */
-  @apply w-[250px] bg-black/30 backdrop-blur-md transition-all;
+  @apply w-[250px] bg-black/50 backdrop-blur-md transition-all;
   @apply opacity-0 pointer-events-none;
 
 
@@ -61,6 +61,8 @@
   @apply pointer-events-auto;
 }
 
+.mb-menu-wrapper.show #menu {
+}
 .mb-menu-wrapper.show #mb-menu {
   @apply opacity-100 pointer-events-auto;
 }
