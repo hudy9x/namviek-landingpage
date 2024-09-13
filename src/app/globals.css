@@ -144,31 +144,17 @@
 
 }
 
+html, body, body * {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply text-white overflow-x-hidden;
-  scroll-behavior: smooth;
   background: #060211;
 }
 
 body > main {
   @apply overflow-x-hidden;
-  scroll-behavior: smooth;
-}
-
-.menu-wrapper {
-  @apply fixed top-10 sm:top-14 w-screen z-40;
-}
-
-#menu {
-  @apply flex items-center justify-center gap-8 px-6;
-  @apply bg-black/70 backdrop-blur-md border rounded-xl text-sm;  
-  @apply border-gray-100/20;
-
-  box-shadow: 1px 9px 16px rgba(8, 30, 85, 0.34);
-}
-
-#menu a {
-  @apply text-gray-400 hover:text-gray-200 py-3 transition-all;
 }
 
 .cta-btn1{

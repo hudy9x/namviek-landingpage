@@ -11,15 +11,15 @@ export default function FeatureSection1() {
       <p className="pa1 mt-[22px] sm:mt-[37px] w-[345px] sm:w-[628px]">Provides built-in features like Views, Import, Export, Notification, Dashboard, Meeting, etc</p>
 
       <div className="mt-[50px] w-full sm:mt-[115px] flex flex-col sm:flex-row items-center gap-6">
-        <Card className="w-[95%] sm:w-[516px]">
-          <img src="/feature-board.png" className="absolute top-[115px] left-[40px]" />
+        <Card className="w-[95%] sm:w-[516px]" height="h-[350px] sm:h-[450px]">
+          <img src="/feature-board.png" className="absolute w-[400px] sm:w-[600px] top-[40px] sm:top-[115px] left-[44px] sm:left-[40px]" />
           <CardTitle
             title="Board view"
             icon={<CgBoard className="w-6 h-6" />}
             desc="Visualize your workflow. Move tasks between stages for clear progress tracking." />
         </Card>
-        <Card type="sky" className="w-[95%] sm:w-[700px]">
-          <img src="/feature-list.png" className="absolute top-[60px] left-[66px]" />
+        <Card type="sky" className="w-[95%] sm:w-[700px]" height="h-[350px] sm:h-[450px]">
+          <img src="/feature-list.png" className="absolute w-[850px] sm:w-[1000px] top-[50px] sm:top-[60px] left-[40px] sm:left-[66px]" />
           <CardTitle
             title="List view"
             icon={<HiOutlineBars3CenterLeft className="w-6 h-6" />}

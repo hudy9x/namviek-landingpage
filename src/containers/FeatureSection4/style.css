@@ -1,0 +1,10 @@
+#feature-4  .card-title {
+  h3{
+    @apply text-sm sm:text-lg;
+  }
+
+  h3 + p {
+    @apply text-xs sm:text-lg;
+  }
+}
+

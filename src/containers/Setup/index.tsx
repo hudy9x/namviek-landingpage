@@ -2,7 +2,7 @@ import './style.css'
 import Terminal from './Terminal'
 
 export default function Setup() {
-  return <section id="setup">
+  return <section id="setup" className='pt-[200px]'>
     <div className="flex flex-col items-center">
       <h6 className="hl3">deployments</h6>
       <h2 className="h2 mt-[17px]">Run Namviek on<br />

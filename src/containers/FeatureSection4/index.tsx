@@ -1,6 +1,6 @@
+import './style.css'
 import BgSpace from "@/components/Background/BgSpace";
 import Card, { CardTitle } from "@/components/Card";
-import { CgBoard } from "react-icons/cg";
 import { HiOutlineChartPie, HiOutlineSquare2Stack, HiOutlineSquares2X2, HiOutlineTableCells, HiOutlineTag } from "react-icons/hi2";
 import { TbNumber123 } from "react-icons/tb";
 
@@ -44,10 +44,10 @@ export default function FeatureSection4() {
         more other ones</h2>
       <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">In addition to these features, Namviek offers many other functionalities.</p>
 
-      <div className="mt-[50px] sm:mt-[115px] grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div className="px-3 mt-[50px] sm:mt-[115px] w-full grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-6">
         {features.map((feat, fIndex) => {
 
-          return <Card type="darkblur" key={fIndex} border="bold" className="w-[386px] grid-cols-1" height={225}>
+          return <Card type="darkblur" key={fIndex} border="bold" className="w-full sm:w-[386px] grid-cols-1" height="h-[180px] sm:h-[225px]">
             {/* <img src="/feature-view-custom-1.png" alt="Custom view" className="absolute top-[27px] left-[36px]" /> */}
             <CardTitle
               title={feat.title}
@@ -60,7 +60,6 @@ export default function FeatureSection4() {
 
     <div className="absolute top-[342px] -left-[43%] -z-10">
       <BgSpace />
-
     </div>
 
 

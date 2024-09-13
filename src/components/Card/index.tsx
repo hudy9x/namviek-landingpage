@@ -22,15 +22,17 @@ interface ICard {
   type?: 'red' | 'darkblur' | 'sky' | 'ocean' | 'hell' | 'aurora' | 'transparent'
   border?: 'normal' | 'bold' | 'lighter'
   flexSize?: boolean
-  height?: number,
+  height?: string,
   children: ReactNode
 }
 
 export default function Card({ className,
   flexSize = false,
   border = 'normal', type = 'red',
-  height = 450, children }: ICard) {
+  height = 'h-[450px]', children }: ICard) {
   const classes = ["card"]
+
+  classes.push(height)
 
   className && classes.push(className)
   type && classes.push(`card-bg-${type}`)
@@ -38,7 +40,7 @@ export default function Card({ className,
   border === 'lighter' && classes.push('card-border-lighter')
   flexSize && classes.push('card-size-flex')
 
-  return <div className={classes.join(" ")} style={{ height }}>
+  return <div className={classes.join(" ")}>
     {children}
   </div>
 }

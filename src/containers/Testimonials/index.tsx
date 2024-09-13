@@ -58,7 +58,7 @@ export default function Testimonials() {
     },
   ]
 
-  return <section id="testimonials" className='relative'>
+  return <section id="testimonials" className='pt-[200px] relative'>
     <div className="flex flex-col items-center">
       <h6 className="hl2">testimonials</h6>
       <h2 className="h2 mt-[17px]">Here’s what developers<br />
@@ -135,7 +135,7 @@ export default function Testimonials() {
       </div>
     </div>
 
-    <div className="absolute top-[350px] left-1/2 -translate-x-1/2 -z-10">
+    <div className="absolute top-[350px] sm:top-[550px] left-1/2 -translate-x-1/2 -z-10">
       <BgBrand />
     </div>
 

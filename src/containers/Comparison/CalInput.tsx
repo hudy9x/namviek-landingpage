@@ -64,7 +64,7 @@ export default function CalInput() {
   console.log(price, member, 12)
 
   return <Card type='darkblur'
-    className='w-[95%] sm:w-[620px] p-8 space-y-4' height={348} border='lighter'>
+    className='w-[95%] sm:w-[620px] p-8 space-y-4' height="h-[348px]" border='lighter'>
     <div className='cal-form-control'>
       <label>Number of members</label>
       <div className='flex items-center gap-4'>

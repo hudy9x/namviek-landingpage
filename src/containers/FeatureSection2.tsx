@@ -1,6 +1,5 @@
 import BgSpace from "@/components/Background/BgSpace";
 import Card, { CardTitle } from "@/components/Card";
-import { CgBoard } from "react-icons/cg";
 import { HiOutlineCalendar, HiOutlineFlag } from "react-icons/hi2";
 
 export default function FeatureSection2() {
@@ -12,16 +11,16 @@ export default function FeatureSection2() {
       <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">Namviek's goal and calendar views help you track tasks, manage deadlines, and stay organized.</p>
 
       <div className="mt-[50px] sm:mt-[115px] w-full flex flex-col sm:flex-row items-center gap-6">
-        <Card type="ocean" border="bold" className="w-[95%] sm:w-[700px]">
-          <img src="/feature-goal.png" alt="Goal view" className="absolute top-[27px] left-[36px]" />
+        <Card type="ocean" border="bold" className="w-[95%] sm:w-[700px]" height="h-[350px] sm:h-[450px]">
+          <img src="/feature-goal.png" alt="Goal view" className="absolute w-[500px] sm:w-[800px] top-[27px] left-[36px]" />
           <CardTitle
             title="Goal view"
             icon={<HiOutlineFlag className="w-6 h-6" />}
             desc={<>Stay on target. See your progress at a glance<br /> and celebrate milestones.</>} />
         </Card>
 
-        <Card type="hell" border="bold" className="w-[95%] sm:w-[516px]">
-          <img src="/feature-calendar.png" alt="Calendar view" className="absolute top-[24px] -left-[396px]" />
+        <Card type="hell" border="bold" className="w-[95%] sm:w-[516px]" height="h-[350px] sm:h-[450px]">
+          <img src="/feature-calendar.png" alt="Calendar view" className="absolute w-[700px] sm:w-[900px] top-[24px] -left-[330px] sm:-left-[396px]" />
           <CardTitle
             title="Calendar view"
             icon={<HiOutlineCalendar className="w-6 h-6" />}
