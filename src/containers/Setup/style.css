@@ -4,6 +4,7 @@
 }
 
 #setup:before {
+  @apply top-[50px] sm:top-[200px] sm:left-0;
   position: absolute;
   content: '';
   width: 100%;

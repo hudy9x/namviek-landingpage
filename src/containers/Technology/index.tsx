@@ -16,7 +16,7 @@ function TechLogo() {
 }
 
 export default function Technology() {
-  return <section id="technology" className="relative sm:w-[1242px] mx-auto mt-[200px] sm:mt-[345px]">
+  return <section id="technology" className="hidden sm:block relative sm:w-[1242px] mx-auto mt-[200px] sm:mt-[345px]">
     <div className="flex flex-col items-center">
       <h6 className="hl2">technology</h6>
       <h2 className="h2 mt-[17px]">We built it on popular<br />

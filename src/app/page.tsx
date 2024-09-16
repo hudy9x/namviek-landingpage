@@ -24,7 +24,7 @@ export default function Home() {
       <FeatureSection2 />
       <FeatureSection3 />
       <FeatureSection4 />
-      {/* <Technology /> */}
+      <Technology />
 
       <Setup />
       <Pricing />
