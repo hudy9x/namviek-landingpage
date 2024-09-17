@@ -13,11 +13,11 @@ export default function Menu() {
           <span className='sm:hidden'>Namviek</span>
         </Link>
         <nav className='hidden sm:block sm:space-x-8'>
-          <Link href="#features">Features</Link>
-          <Link href="#setup">Setup</Link>
+          <Link href="/#features">Features</Link>
+          <Link href="/#setup">Setup</Link>
           <Link href="https://docs.namviek.com" target="_blank">Doc</Link>
-          <Link href="#pricing">Pricing</Link>
-          <Link href="#about">About</Link>
+          <Link href="/pricing">Pricing</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
 
         <div className='flex items-center gap-6'>
@@ -35,11 +35,11 @@ export default function Menu() {
     <div className="mb-menu-wrapper">
       <MenuBackdrop />
       <nav id="mb-menu">
-        <Link href="#features">Features</Link>
-        <Link href="#setup">Setup</Link>
+        <Link href="/#features">Features</Link>
+        <Link href="/#setup">Setup</Link>
         <Link href="https://docs.namviek.com" target="_blank">Document</Link>
-        <Link href="#pricing">Pricing</Link>
-        <Link href="#about">About</Link>
+        <Link href="/pricing">Pricing</Link>
+        <Link href="/contact">Contact</Link>
       </nav>
     </div>
   </div >

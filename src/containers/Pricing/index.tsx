@@ -18,7 +18,7 @@ async function getProductInfo() {
     id
   })
 
-  console.log(result.prices)
+  // console.log(result.prices)
 
   return {
     priceAmount: result.prices[0].priceAmount / 100,
@@ -31,7 +31,7 @@ async function getProductInfo() {
 // export const revalidate = 10
 export default async function Pricing() {
   const product = await getProductInfo()
-  console.log('=====', product)
+
   const whatIncludes = [
     'Codebase',
     'Usage document',

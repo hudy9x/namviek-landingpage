@@ -74,9 +74,10 @@ export default function Testimonials() {
             return <Card key={cindex}
               type='darkblur'
               className='p-6 group'
-              border='lighter'
+              border='normal'
               flexSize={true}>
-              <p className='text-zinc-300'>{comment} <Link href={link} target='_blank' className='group-hover:opacity-100 opacity-0 transition-all py-1 pl-2 pr-3 text-xs rounded-md bg-gray-100 hover:bg-gray-200 text-black'>{`-->`} Detail</Link></p>
+              <p className='text-zinc-300'>{comment}
+              </p>
               <div className='flex items-center gap-3 mt-3'>
                 <img className='w-12 h-12 rounded-full' src={avatar} />
                 <div>
@@ -94,12 +95,12 @@ export default function Testimonials() {
             const nickname = name.split(/\s+/).join('_').toLowerCase()
             return <Card key={cindex}
               flexSize={true}
-              border='lighter'
+              border='normal'
               type='darkblur'
               className={`p-6 group ${hightlight ? 'col-span-2' : ''}`}
             >
 
-              <p className='text-zinc-300'>{comment} <Link href={link} target='_blank' className='group-hover:opacity-100 opacity-0 transition-all py-1 pl-2 pr-3 text-xs rounded-md bg-gray-100 hover:bg-gray-200 text-black'>{`-->`} Detail</Link></p>
+              <p className='text-zinc-300'>{comment}</p>
               <div className='flex items-center gap-3 mt-3'>
                 <img className='w-12 h-12 rounded-full' src={avatar} />
                 <div>
@@ -117,10 +118,10 @@ export default function Testimonials() {
             const nickname = name.split(/\s+/).join('_').toLowerCase()
             return <Card key={cindex}
               className='p-6 group'
-              border='lighter'
+              border='normal'
               type='darkblur'
               flexSize={true}>
-              <p className='text-zinc-300'>{comment} <Link href={link} target='_blank' className='group-hover:opacity-100 opacity-0 transition-all py-1 pl-2 pr-3 text-xs rounded-md bg-gray-100 hover:bg-gray-200 text-black'>{`-->`} Detail</Link></p>
+              <p className='text-zinc-300'>{comment} </p>
               <div className='flex items-center gap-3 mt-3'>
                 <img className='w-12 h-12 rounded-full' src={avatar} />
                 <div>

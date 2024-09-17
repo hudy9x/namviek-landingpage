@@ -10,7 +10,7 @@ export default function CallToAction() {
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Decreasing the management overhead for small teams of 10-15 people from about $100 a month to below $15 a month</p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
-            href="#pricing"
+            href="/pricing"
             className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >Get it now</a>
           <a href="https://docs.namviek.com" className="text-sm font-semibold leading-6 text-white">

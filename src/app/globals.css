@@ -191,3 +191,27 @@ body > main {
 
 }
 
+
+.form-input-bg {
+  background: #120C1F
+}
+
+.form-input-border {
+  border-color: #3D3D54
+}
+
+.form-control.col {
+  @apply flex flex-col gap-2;
+}
+
+.form-control label {
+  @apply text-sm;
+}
+
+.form-input {
+  @apply px-3 py-2 rounded-lg text-sm;
+  color: #ACA5BA;
+  background: #120C1F;
+  border: 1px solid #3D3D54
+}
+
