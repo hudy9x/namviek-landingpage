@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import ContactForm from "./ContactForm";
+
+export const metadata: Metadata = {
+  title: 'Contact',
+  description: 'If you have any question, feel free to contact us',
+}
 
 export default function ContactPage() {
   return <>
