@@ -5,26 +5,26 @@ export default function Footer() {
   const bottomMenus = [
     {
       title: 'Product', menus: [
-        { title: 'Features', link: '#features' },
-        { title: 'Integrations', link: '#features' },
-        { title: 'Pricings', link: '#features' },
+        { title: 'Features', link: '/#features' },
+        // { title: 'Integrations', link: '#features' },
+        { title: 'Pricings', link: '/pricing' },
         { title: 'Change logs', link: '#features' },
       ]
     },
 
     {
       title: 'About', menus: [
-        { title: 'Our team', link: '#features' },
-        { title: 'Our value', link: '#features' },
-        { title: 'Blog', link: '#features' },
+        { title: 'Our team', link: '/our-team' },
+        { title: 'Our value', link: '/our-values' },
+        // { title: 'Blog', link: '#features' },
       ]
     },
 
     {
       title: 'Resources', menus: [
-        { title: 'Downloads', link: '#features' },
-        { title: 'Documentation', link: '#features' },
-        { title: 'Contact', link: '#features' },
+        { title: 'Downloads', link: 'https://github.com/hudy9x/namviek' },
+        { title: 'Documentation', link: 'https://docs.namviek.com' },
+        { title: 'Contact', link: '/contact' },
       ]
     },
 

@@ -1,0 +1,17 @@
+.our-value-content {
+
+  @apply space-y-4;
+
+  h4 {
+    @apply text-gray-200 pt-6 text-lg font-bold;
+  }
+
+  p {
+    @apply text-sm text-gray-500;
+  }
+
+  p ul {
+    @apply pl-4 list-disc mt-3 space-y-3;
+  }
+} 
+

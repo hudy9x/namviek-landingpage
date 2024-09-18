@@ -9,13 +9,17 @@ export default function ContactForm() {
   const getHref = () => {
 
     if (!fullName || !body) return '';
-    if (fullName.length < 3) return ''
+    if (fullName.length < 3) {
+
+      return ''
+    }
+
     if (body.length < 20) return '';
 
     return `mailto:hi@hudy9x.com?subject=Request support from ${fullName}&body=${body}`
   }
 
-  return <form className="mt-[50px] sm:mt-[115px] w-[95%] sm:w-[500px] flex flex-col gap-4">
+  return <div className="mt-[50px] sm:mt-[115px] w-[95%] sm:w-[500px] flex flex-col gap-4">
 
 
     <div className='form-control col'>
@@ -34,5 +38,5 @@ export default function ContactForm() {
     </div>
 
 
-  </form>
+  </div>
 }
