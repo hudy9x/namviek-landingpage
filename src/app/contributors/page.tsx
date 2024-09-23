@@ -41,15 +41,15 @@ async function getContributors(page = 1) {
 };
 
 
-export default async function ContactPage() {
+export default async function ContributorPage() {
   const contributors = await getContributors()
   // console.log('contributor', contributors)
   return <>
     <section id="feature-3" className="relative sm:w-[1242px] mx-auto mt-[200px] sm:mt-[150px]">
       <div className="flex flex-col items-center">
         <h6 className="hl1">Team</h6>
-        <h2 className="h2 mt-[17px]">Meet our team</h2>
-        <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">Our team is a diverse group of passionate individuals dedicated to creating innovative solutions</p>
+        <h2 className="h2 mt-[17px]">Meet Contributors</h2>
+        <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">A diverse group of passionate individuals dedicated to creating innovative solutions</p>
 
         <div className="mt-20 grid grid-cols-3 gap-8">
           {contributors.map(contri => {

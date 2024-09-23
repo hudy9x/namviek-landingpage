@@ -14,7 +14,7 @@ export default function Footer() {
 
     {
       title: 'About', menus: [
-        { title: 'Our team', link: '/our-team' },
+        { title: 'Contributors', link: '/contributors' },
         { title: 'Our value', link: '/our-values' },
         // { title: 'Blog', link: '#features' },
       ]
@@ -37,14 +37,6 @@ export default function Footer() {
           <span className="font-bold">Namviek</span>
         </div>
         <p className="second-color text-sm leading-6">The open-source solution for cost-effective Project management.</p>
-        <div className="flex items-center gap-2 pt-2">
-          <Link href="https://github.com/hudy9x/namviek" target="_blank" className="text-gray-200">
-            <FaGithub className="w-8 h-8 p-2 border rounded-md border-gray-700 bg-gray-900 hover:bg-gray-800 transition-all cursor-pointer" />
-          </Link>
-          <Link href="https://discord.gg/XbYtDQYFPZ" target="_blank" className="text-gray-200">
-            <FaDiscord className="w-8 h-8 p-2 border rounded-md border-gray-700 bg-gray-900 hover:bg-gray-800 transition-all cursor-pointer" />
-          </Link>
-        </div>
       </aside>
 
       <aside className="flex items-start gap-8 w-full sm:w-[400px] border-t border-gray-900 sm:border-none pt-6 sm:pt-0">
@@ -63,8 +55,16 @@ export default function Footer() {
         })}
       </aside>
     </section>
-    <section className="py-5 sm:py-10 border-t border-gray-900 mt-3 sm:mt-10">
+    <section className="py-5 sm:py-10 border-t border-gray-900 mt-3 sm:mt-10 flex flex-col sm:flex-row gap-3 items-start sm:items-center sm:justify-between">
       <p className="second-color text-xs sm:text-base">Copyright 2024 All rights reserved - Namviek</p>
+      <div className="flex items-center gap-2">
+        <Link href="https://github.com/hudy9x/namviek" target="_blank" className="text-gray-200">
+          <FaGithub className="w-8 h-8 p-2 border rounded-md border-gray-700 bg-gray-900 hover:bg-gray-800 transition-all cursor-pointer" />
+        </Link>
+        <Link href="https://discord.gg/XbYtDQYFPZ" target="_blank" className="text-gray-200">
+          <FaDiscord className="w-8 h-8 p-2 border rounded-md border-gray-700 bg-gray-900 hover:bg-gray-800 transition-all cursor-pointer" />
+        </Link>
+      </div>
     </section>
   </footer>
 }
