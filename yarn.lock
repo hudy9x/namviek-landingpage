@@ -190,10 +190,10 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@polar-sh/sdk@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@polar-sh/sdk/-/sdk-0.8.0.tgz#2002cd95da05c22de117a6c95d21ebd6127d9cc5"
-  integrity sha512-O+TrEbWRwdfQrKazK5nceeC3+BeAwXGYRSZbUH/7P6ynfkN2bjx9LaQbIs4+bCHGH1syvVUt2Md3+Di2IMTUzQ==
+"@polar-sh/sdk@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@polar-sh/sdk/-/sdk-0.11.0.tgz#8b7386a969804e4dcfe6f2fd465e5d5ca8b411f7"
+  integrity sha512-viF5mDCMZVbLul27uiOZb/K0vyZQQXh8BxjcAX4O5+nJ6yCr2vJ6EnO00LUsKVFD/tXiUgwAG5KRv1Qs9DX/7g==
 
 "@rtsao/scc@^1.1.0":
   version "1.1.0"

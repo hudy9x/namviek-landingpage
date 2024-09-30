@@ -11,31 +11,38 @@ const polar = new Polar({
 });
 
 async function getProductInfo() {
-  console.log('called')
 
-  try {
-    const id = "19a6a164-d5a7-4e99-83eb-aa39e4d41de8"
-    const result = await polar.products.get({
-      id
-    })
 
-    console.log(result)
+  // try {
+  const id = "19a6a164-d5a7-4e99-83eb-aa39e4d41de8"
+  const result = await polar.products.get({
+    id
+  })
 
-    // console.log(result.prices)
+  console.log('Product get', result)
 
-    return {
-      priceAmount: result.prices[0].priceAmount / 100,
-      priceCurrency: result.prices[0].priceCurrency,
-      link: `https://polar.sh/api/checkout?price=${result.prices[0].id}`
-    };
-  } catch (error) {
-    console.log(error)
-    return {
-      priceAmount: -1,
-      priceCurrency: 'USD',
-      link: ``
-    }
+  const productPrice = result.prices[0]
+
+
+
+  // console.log(productPrice.price_amount)
+
+
+  // console.log(result.prices)
+
+  //   return {
+  //     priceAmount: result.prices[0].pricemount / 100,
+  //     priceCurrency: result.prices[0].priceCurrency,
+  //     link: `https://polar.sh/api/checkout?price=${result.prices[0].id}`
+  //   };
+  // } catch (error) {
+  // console.log(error)
+  return {
+    priceAmount: -1,
+    priceCurrency: 'USD',
+    link: ``
   }
+  // }
 }
 
 

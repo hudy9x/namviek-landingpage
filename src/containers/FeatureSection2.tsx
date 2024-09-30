@@ -8,7 +8,7 @@ export default function FeatureSection2() {
       <h6 className="hl1">app features</h6>
       <h2 className="h2 mt-[17px]">Tracking your<br />
         goals with ease</h2>
-      <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">Namviek's goal and calendar views help you track tasks, manage deadlines, and stay organized.</p>
+      <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">{`Namviek's goal and calendar views help you track tasks, manage deadlines, and stay organized.`}</p>
 
       <div className="mt-[50px] sm:mt-[115px] w-full flex flex-col sm:flex-row items-center gap-6">
         <Card type="ocean" border="bold" className="w-[95%] sm:w-[700px]" height="h-[350px] sm:h-[450px]">
