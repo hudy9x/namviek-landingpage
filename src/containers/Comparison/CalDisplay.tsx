@@ -4,7 +4,9 @@ import { useCalculator } from "./context";
 
 export default function CalDisplay() {
   const { price } = useCalculator()
-  const saving = price - 100
+  const anually = 12
+  const productPrice = 15 * anually // $15 / month
+  const saving = price - productPrice
   const percent = saving / price * 100
   return <Card type='sky' height="h-[345px]" className="w-[95%] sm:w-[291px] p-6">
     <h2 className="uppercase text-[11px] font-semibold">WE DID THE MATH FOR YOU</h2>
@@ -16,7 +18,7 @@ export default function CalDisplay() {
       </div>
 
       <div className="cal-section">
-        <h3 className='hightlight'>$ 100</h3>
+        <h3 className='hightlight'>$ {productPrice}</h3>
         <p>Price with Namviek</p>
       </div>
       <div className="cal-section">
