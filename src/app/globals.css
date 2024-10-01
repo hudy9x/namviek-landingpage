@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --second-color: #7F8AA3;
+}
+
+@layer utilities {
+  .h1 {
+    @apply text-4xl leading-10 sm:text-6xl sm:leading-[79px] text-center;
+    font-weight: 600;
+
+    background: linear-gradient(96.14deg, #FFFFFF 17.18%, #9389B7 82.82%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .h2 {
+    @apply text-2xl sm:text-5xl leading-tight text-center text-white;
+    font-weight: 700;
+  }
+
+  .h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #EEE9FC;
+  }
+
+  .hl1, .hl2, .hl3, .hl4 {
+    @apply uppercase whitespace-nowrap text-xs sm:text-lg;
+    font-weight: 600;
+    /* line-height: 22px; */
+    /* identical to box height */
+
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .hl1 {
+    background: linear-gradient(90deg, #FFC075 0%, #F99090 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hl2{
+    background: linear-gradient(90deg, #58DFFD 0%, #BEF990 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hl3 {
+    background: linear-gradient(90deg, #58B7FD 0%, #F99090 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .pa1 {
+    @apply text-base sm:text-2xl;
+    text-align: center;
+    /* font-size: 22px; */
+    color: var(--second-color);
+  }
+
+  .pa2 {
+    @apply text-sm sm:text-lg;
+    color: var(--second-color);
+  }
+
+  .second-color {
+    color: var(--second-color);
+  }
+
+  .bg-gradient-1 {
+    position: relative;
+    width: 903.98px;
+    height: 898.92px;
+  }
+
+  .bg-gradient-1:before {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    width: 629.21px;
+    height: 629.21px;
+    left: 147.72px;
+    top: 155px;
+
+    background: linear-gradient(180deg, #7BB0FF 0%, rgba(122, 255, 111, 0.46) 100%);
+    filter: blur(100px);
+    transform: rotate(-90deg);
+  }
+
+/* circel-sm */
+
+  .bg-gradient-1:after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    width: 460.4px;
+    height: 460.4px;
+    left: 180.56px;
+    top: 81px;
+
+    background: linear-gradient(180deg, #3E87F6 0%, rgba(54, 245, 37, 0) 100%, #7261A3 100%);
+    filter: blur(50px);
+    transform: rotate(-90deg);
+  }
+
+
+  .bg-gradient-2 {
+    position: relative;
+    width: 653px;
+    height: 666.81px;
+  }
+
+  .bg-gradient-2:after {
+    content:'';
+    position: absolute;
+    width: 629.21px;
+    height: 629.21px;
+    left: 0px;
+    top: 37.6px;
+    border-radius: 50%;
+
+    background: linear-gradient(180deg, #FF7BCA 0%, rgba(255, 197, 111, 0.46) 100%);
+    filter: blur(100px);
+  }
+
+  .bg-gradient-2:before {
+    content: '';
+    position: absolute;
+    width: 460.4px;
+    height: 460.4px;
+    left: 192.6px;
+    top: 0px;
+    border-radius: 50%;
+
+    background: linear-gradient(180deg, #F22FB0 0%, rgba(245, 138, 37, 0) 100%, #7061A3 100%);
+    filter: blur(50px);
+  }
+
+}
+
+html, body, body * {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-white overflow-x-hidden;
+  background: #060211;
+}
+
+body > main {
+  @apply overflow-x-hidden;
+}
+
+.cta-btn1{
+  @apply uppercase text-sm text-gray-900 px-6 py-2.5 font-bold;
+  background: #EEE9FF;
+  border-radius: 8px;
+}
+
+.cta-btn2 {
+  @apply shadow rounded-md text-base font-semibold px-4 py-2;
+  background: linear-gradient(90deg, #9B3737 0%, #D94181 100%);
+  border: 1px solid #E34E86;
+}
+
+.hero-background {
+  @apply relative px-3 sm:px-0;
+}
+
+.hero-background:before {
+  @apply absolute w-full h-full top-0 left-0 z-10;
+  content: '';
+
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(6, 2, 17, 0) 23.5%, rgba(6, 2, 17, 0.91) 60%, #060211 100%);
+}
+
+.section-title {
+  @apply text-base font-semibold;
+
+  background: linear-gradient(90deg, #B04398 0%, #D25063 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+
+
+.form-input-bg {
+  background: #120C1F
+}
+
+.form-input-border {
+  border-color: #3D3D54
+}
+
+.form-control.col {
+  @apply flex flex-col gap-2;
+}
+
+.form-control label {
+  @apply text-sm;
+}
+
+.form-input {
+  @apply px-3 py-2 rounded-lg text-sm;
+  color: #ACA5BA;
+  background: #120C1F;
+  border: 1px solid #3D3D54
+}
+

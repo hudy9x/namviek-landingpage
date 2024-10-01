@@ -1,0 +1,59 @@
+/* bg-brand */
+.bg-brand {
+  position: relative;
+  width: 621px;
+  height: 477.86px;
+}
+/* circle-4 */
+.bg-brand .circle-4 {
+  position: absolute;
+  left: 0%;
+  right: 42.83%;
+  top: 0%;
+  bottom: 0%;
+
+  background: rgba(42, 139, 234, 0.5);
+  filter: blur(87.5px);
+}
+
+
+
+/* circle-3 */
+
+.bg-brand .circle-3 {
+  position: absolute;
+  left: 18.84%;
+  right: 42.83%;
+  top: 0%;
+  bottom: 48.82%;
+
+  background: rgba(36, 255, 242, 0.5);
+  filter: blur(87.5px);
+}
+
+
+/* circle-2 */
+.bg-brand .circle-2 {
+  position: absolute;
+  left: 43%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: rgba(247, 60, 92, 0.5);
+  filter: blur(87.5px);
+}
+
+
+/* circle-1 */
+.bg-brand .circle-1 {
+  position: absolute;
+  left: 43%;
+  right: 18.68%;
+  top: 48.82%;
+  bottom: 0%;
+
+  background: rgba(255, 251, 164, 0.5);
+  filter: blur(87.5px);
+}
+

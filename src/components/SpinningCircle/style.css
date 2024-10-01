@@ -1,0 +1,48 @@
+.circle {
+  @apply absolute;
+  @apply rounded-full;
+}
+
+.circle:before {
+  background: rgba(226,232,255,.04);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 2px;
+  pointer-events: none;
+  position: absolute
+}
+
+.circle-gradient .circle:before {
+
+    background: conic-gradient( rgba(109, 46, 255, 0) 6.7%, rgb(122 207 255 / 35%) 20.8%, rgb(254 139 226 / 70%) 34.9%, #ff7a8e 49.99%, rgba(255, 189, 122, 0) 50%);
+
+}
+
+.circle-gradient {
+  animation:sync-cycles-circles 10s linear infinite
+}
+
+@keyframes sync-cycles-circles {
+  0% {
+    opacity: .32;
+    transform: translateZ(0) rotate(0)
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateZ(0) rotate(.5turn)
+  }
+
+  to {
+    opacity: .32;
+    transform: translateZ(0) rotate(1turn)
+  }
+}
+
