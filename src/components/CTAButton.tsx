@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CTAButton() {
-  return <div className="text-center mt-[32px]"><button className="cta-btn1">clone it now</button></div>
+  return <Link href={'/#pricing'} className="text-center mt-[32px]"><button className="cta-btn1">clone it now</button></Link>
 }
