@@ -86,7 +86,7 @@ export default async function Pricing() {
             <span>${product.priceAmount}</span>
             <small className='text-sm font-normal text-[#DCA9A9]'>{product.priceCurrency}</small>
           </h2>
-          <Link href={product.link} target='_blank'>
+          <Link href={''} target='_blank'>
             <button className='cta-btn2 w-full'>Get it now</button>
           </Link>
           <p className='text-[#ECE6FE] text-xs'>
