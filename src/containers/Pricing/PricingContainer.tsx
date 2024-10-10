@@ -32,6 +32,7 @@ export default function PricingContainer(product: {
   const subheading = accessType === EAccessType.ThreeMonth ? '3 month access' : 'lifetime access'
   const priceHeading = isThreeMonth ? 'Pricing for 3 months' : 'Pricing for lifetime'
   const priceNumber = isThreeMonth ? 9 : 39;
+  const textColor = isThreeMonth ? 'text-[#EDC6CC]' : 'text-[#d3edc6]';
   const cardType = isThreeMonth ? 'red' : 'sky'
   const priceFor3MonthLink = 'https://namviek.lemonsqueezy.com/buy/59488ac7-baea-4b24-b194-1d5aad3c2678'
   const priceForLifetimeLink = 'https://namviek.lemonsqueezy.com/buy/e284fa2d-3ce6-4887-9bae-c41f2d2afb1e'
@@ -80,23 +81,23 @@ export default function PricingContainer(product: {
               </div>
             })}
           </div>
-          <div className='text-sm second-color mt-6'>{`See all what's in the pack`}</div>
+          <div className='text-sm second-color mt-6'>{`You will be granted to access locked articles on `}<Link className='hover:underline transition-all' target='_blank' href="https://docs.namviek.com">https://docs.namviek.com</Link></div>
 
         </Card>
         <Card
           type={cardType}
           className='w-[95%] sm:w-[320px] p-10 flex flex-col gap-6 justify-center text-center'
           height={"h-[400px]"}>
-          <p className='uppercase text-sm font-semibold text-[#EDC6CC]'>{priceHeading}</p>
+          <p className={`uppercase text-sm font-semibold ${textColor}`}>{priceHeading}</p>
           <h2 className='uppercase text-5xl space-x-2 font-extrabold text-[#EEE9FC]'>
             <span>${priceNumber}</span>
-            <small className='text-sm font-normal text-[#DCA9A9]'>{product.priceCurrency}</small>
+            <small className={`text-sm font-normal ${textColor}`}>USD</small>
           </h2>
           <Link href={productLink} target='_blank'>
-            <button className='cta-btn2 w-full'>Get it now</button>
+            <button className={`${isThreeMonth ? 'cta-btn2' : 'cta-btn3'} w-full`}>Get it now</button>
           </Link>
           <p className='text-[#ECE6FE] text-xs'>
-            Ideal for small teams (10-30 members)<br /> with a low budget.
+            Ideal for small teams (10-20 members)<br /> with a low budget.
           </p>
         </Card>
 

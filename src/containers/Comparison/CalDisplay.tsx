@@ -17,9 +17,17 @@ export default function CalDisplay() {
         <p>Your tools of choice today</p>
       </div>
 
-      <div className="cal-section">
+      <div className="cal-section relative group">
         <h3 className='hightlight'>$ {productPrice}</h3>
         <p>Price with Namviek</p>
+        {/* <div className="absolute top-0 right-0 h-full group-hover:opacity-100 opacity-0"> */}
+        <div className="absolute top-0 right-0 h-full px-4">
+          <div className="flex items-center h-full text-xs gap-2">
+            <span>Render</span>
+            <span>Aws</span>
+            <span>DO</span>
+          </div>
+        </div>
       </div>
       <div className="cal-section">
         <h3 className='flex items-center justify-between'>
