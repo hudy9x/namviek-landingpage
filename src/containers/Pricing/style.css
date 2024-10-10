@@ -1,0 +1,16 @@
+.pricing-group-btn {
+  @apply border rounded-full p-2 border-gray-100/20;
+  @apply space-x-2;
+}
+
+.pricing-btn {
+  @apply rounded-full px-3 py-1.5 bg-transparent;
+  @apply text-sm;
+  @apply hover:bg-gray-100/10;
+
+  &.active {
+    @apply bg-white text-black;
+  }
+}
+
+
