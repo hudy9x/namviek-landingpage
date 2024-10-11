@@ -1,0 +1,18 @@
+.host-section {
+  @apply absolute top-0 right-0 h-full px-4 rounded-xl;
+  @apply bg-white/10 backdrop-blur-md;
+}
+
+.host-container {
+  @apply flex items-center h-full gap-1;
+}
+
+.host-item {
+  @apply px-1.5 py-0.5 bg-white/80 rounded-full;
+  @apply hover:bg-white cursor-pointer transition-all;
+  font-size: 10px;
+
+  img {
+    @apply w-5 h-5;
+  }
+}
