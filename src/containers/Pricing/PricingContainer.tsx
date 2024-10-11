@@ -4,6 +4,7 @@ import './style.css'
 import Link from 'next/link'
 import { FaCircleCheck } from 'react-icons/fa6'
 import { useState } from 'react'
+import PricingComparison from './PricingComparision'
 
 enum EAccessType {
   ThreeMonth,
@@ -22,7 +23,8 @@ export default function PricingContainer(product: {
   const developmentDoc = 'Development document'
   const whatIncludes = [
     'Codebase',
-    'Deploy document',
+    'Setup document',
+    'Integration document',
     'Email support',
     'Video tutorial',
     developmentDoc,
@@ -45,7 +47,7 @@ export default function PricingContainer(product: {
       <h2 className="h2 mt-[17px]">Simple no-tricks<br />
         pricing plan
       </h2>
-      <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">Pay a one-time fee for lifetime access to the codebase and documentation.</p>
+      <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">You just have to pay for documentation access and feel free to download the codebase</p>
       <div className='mt-8'>
         <div className='pricing-group-btn'>
           <button
@@ -81,7 +83,12 @@ export default function PricingContainer(product: {
               </div>
             })}
           </div>
-          <div className='text-sm second-color mt-6'>{`You will be granted to access locked articles on `}<Link className='hover:underline transition-all' target='_blank' href="https://docs.namviek.com">https://docs.namviek.com</Link></div>
+          <div className='text-sm second-color mt-6'>
+            <Link href={'/pricing#price-include'}>
+              {`See all what's in the pack`}
+            </Link>
+          </div>
+          {/* <div className='text-sm second-color mt-6'>{`You will be granted to access locked articles on `}<Link className='hover:underline transition-all' target='_blank' href="https://docs.namviek.com">https://docs.namviek.com</Link></div> */}
 
         </Card>
         <Card
@@ -109,6 +116,7 @@ export default function PricingContainer(product: {
     </div>
 
 
+    {/* <PricingComparison /> */}
 
   </section >
 }
