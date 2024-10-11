@@ -64,7 +64,7 @@ export default function PricingComparison() {
       <div className="flex flex-col items-center mb-20">
         <h6 className="hl2">Pricing Detail</h6>
         <h2 className="h2 mt-[17px]">See all <br />{`what's in the pack`}</h2>
-        <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">Once you've paid for either the 3-month or lifetime plan, you'll be able to check out all the documents on <Link href="https://docs.namviek.com" className="underline">docs.namviek.com</Link>.</p>
+        <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">{`Once you've paid for either the 3-month or lifetime plan, you'll be able to check out all the documents on`} <Link href="https://docs.namviek.com" className="underline">docs.namviek.com</Link>.</p>
       </div>
 
       <div className="grid grid-cols-3 gap-8">
