@@ -169,6 +169,15 @@ body > main {
   border: 1px solid #E34E86;
 }
 
+.cta-btn3 {
+  @apply shadow rounded-md text-base font-semibold px-4 py-2;
+  /* background: linear-gradient(90deg, #9B3737 0%, #D94181 100%); */
+  /* border: 1px solid #E34E86; */
+  text-shadow: 0px 1px 3px #488932;
+  background: linear-gradient(90deg, #c4b444 0%, #41d981 100%);
+  border: 1px solid #7ee34e;
+}
+
 .hero-background {
   @apply relative px-3 sm:px-0;
 }
