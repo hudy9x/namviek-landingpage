@@ -8,7 +8,7 @@ export default function Footer() {
         { title: 'Features', link: '/#features' },
         // { title: 'Integrations', link: '#features' },
         { title: 'Pricings', link: '/pricing' },
-        { title: 'Change logs', link: '#features' },
+        { title: 'Change logs', link: '/changelog' },
       ]
     },
 
