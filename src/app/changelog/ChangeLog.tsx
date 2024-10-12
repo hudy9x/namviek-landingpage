@@ -43,17 +43,16 @@ export default function Changelog() {
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-900 text-center mb-12">Changelog</h1>
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-200"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-700"></div>
 
           {changelogEntries.map((entry, index) => (
             <div key={index} className="mb-16 relative">
-              <div className="flex flex-col md:flex-row items-center">
+              <div className="flex flex-col md:flex-row items-start">
                 {/* Date and Version (left side) */}
                 <div className="w-full md:w-1/2 pr-8 md:pr-12 mb-4 md:mb-0 flex flex-col items-start md:items-end">
-                  <div className="bg-white shadow overflow-hidden rounded-lg p-4 inline-block">
+                  <div className="bg-black shadow overflow-hidden rounded-lg p-4 inline-block">
                     <div className="flex items-center text-sm text-gray-500 mb-1">
                       <HiOutlineCalendar className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
                       <time dateTime={entry.date}>{entry.date}</time>
@@ -63,12 +62,12 @@ export default function Changelog() {
                 </div>
 
                 {/* Timeline dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-4 w-4 h-4 bg-primary rounded-full"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-4 w-4 h-4 bg-zinc-700 rounded-full"></div>
 
                 {/* Content (right side) */}
                 <div className="w-full md:w-1/2 pl-0 md:pl-12">
-                  <div className="bg-white shadow overflow-hidden rounded-lg p-6">
-                    <h2 className="text-xl font-semibold text-gray-900 mb-3">{entry.title}</h2>
+                  <div className="bg-black shadow overflow-hidden rounded-lg p-6">
+                    <h2 className="text-xl font-semibold text-gray-300 mb-3">{entry.title}</h2>
                     {entry.image && (
                       <Image
                         src={entry.image}
@@ -78,7 +77,7 @@ export default function Changelog() {
                         className="w-full h-auto rounded-lg mb-4"
                       />
                     )}
-                    <p className="text-gray-600 mb-4">{entry.description}</p>
+                    <p className="text-gray-400 mb-4">{entry.description}</p>
                     {entry.changes && (
                       <ul className="text-sm text-gray-500 list-disc list-inside">
                         {entry.changes.map((change, changeIndex) => (
