@@ -4,8 +4,8 @@ import './terminal.css'
 export default function Terminal() {
   const lines = [
     'cp .env.example .env',
-    'yarn compose build',
-    'yarn compose up'
+    'yarn compose-build',
+    'yarn compose-up'
   ]
 
   return <div className="terminal w-full">
