@@ -3,6 +3,8 @@ import './terminal.css'
 
 export default function Terminal() {
   const lines = [
+    'git clone git@github.com:hudy9x/namviek',
+    'cd namviek',
     'cp .env.example .env',
     'yarn compose-build',
     'yarn compose-up'
@@ -23,7 +25,7 @@ export default function Terminal() {
         const tail = splitted.slice(1, splitted.length)
 
         return <div key={lineIndex} className='line'>
-          <span className='hidden sm:block'>user@user-mac</span>
+          <span className='hidden sm:block'>user@hudy-m1</span>
           <span style={{ color: '#30FFFF' }}>~</span>
           <span>$ <span style={{ color: '#A4DB82' }}>{head}</span> {tail.join(' ')}</span>
           <LineCopy command={command} />

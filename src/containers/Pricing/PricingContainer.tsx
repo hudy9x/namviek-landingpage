@@ -109,6 +109,7 @@ export default function PricingContainer(product: {
         </Card>
 
       </div>
+      <p className='mt-14'><Link className='underline underline-offset-4' href={"/#setup"}>I want to try it first !!</Link></p>
     </div >
 
     <div className="absolute top-[350px] left-1/2 -translate-x-1/2 -z-10">
