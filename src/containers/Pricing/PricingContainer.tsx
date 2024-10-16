@@ -36,8 +36,8 @@ export default function PricingContainer(product: {
   const priceNumber = isThreeMonth ? 9 : 39;
   const textColor = isThreeMonth ? 'text-[#EDC6CC]' : 'text-[#d3edc6]';
   const cardType = isThreeMonth ? 'red' : 'sky'
-  const priceFor3MonthLink = 'https://namviek.lemonsqueezy.com/buy/59488ac7-baea-4b24-b194-1d5aad3c2678'
-  const priceForLifetimeLink = 'https://namviek.lemonsqueezy.com/buy/e284fa2d-3ce6-4887-9bae-c41f2d2afb1e'
+  const priceFor3MonthLink = process.env.NEXT_PUBLIC_THREEMONTH_ACCESS
+  const priceForLifetimeLink = process.env.NEXT_PUBLIC_LIFETIME_ACCESS
   const productLink = isThreeMonth ? priceFor3MonthLink : priceForLifetimeLink
 
 
