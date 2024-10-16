@@ -36,8 +36,8 @@ export default function PricingContainer(product: {
   const priceNumber = isThreeMonth ? 9 : 39;
   const textColor = isThreeMonth ? 'text-[#EDC6CC]' : 'text-[#d3edc6]';
   const cardType = isThreeMonth ? 'red' : 'sky'
-  const priceFor3MonthLink = process.env.NEXT_PUBLIC_THREEMONTH_ACCESS
-  const priceForLifetimeLink = process.env.NEXT_PUBLIC_LIFETIME_ACCESS
+  const priceFor3MonthLink = process.env.NEXT_PUBLIC_THREEMONTH_ACCESS || ''
+  const priceForLifetimeLink = process.env.NEXT_PUBLIC_LIFETIME_ACCESS || ''
   const productLink = isThreeMonth ? priceFor3MonthLink : priceForLifetimeLink
 
 
