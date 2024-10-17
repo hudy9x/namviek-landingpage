@@ -40,6 +40,9 @@ export default function PricingContainer(product: {
   const priceForLifetimeLink = process.env.NEXT_PUBLIC_LIFETIME_ACCESS || ''
   const productLink = isThreeMonth ? priceFor3MonthLink : priceForLifetimeLink
 
+  const saleOff = isThreeMonth ? 0 : 20;
+  const discountCode = isThreeMonth ? '' : '100MEM'
+
 
   return <section id="pricing" className='pt-[200px]'>
     <div className="flex flex-col items-center">
@@ -93,19 +96,23 @@ export default function PricingContainer(product: {
         </Card>
         <Card
           type={cardType}
-          className='w-[95%] sm:w-[320px] p-10 flex flex-col gap-6 justify-center text-center'
+          className='w-[95%] sm:w-[320px] relative p-10 flex flex-col gap-6 justify-center text-center'
           height={"h-[400px]"}>
           <p className={`uppercase text-sm font-semibold ${textColor}`}>{priceHeading}</p>
           <h2 className='uppercase text-5xl space-x-2 font-extrabold text-[#EEE9FC]'>
-            <span>${priceNumber}</span>
+            {saleOff ? <span className='uppercase font-extrabold text-xl text-white/30'>$ {priceNumber}</span> : null}
+            <span>${priceNumber - saleOff}</span>
             <small className={`text-sm font-normal ${textColor}`}>USD</small>
           </h2>
+
+
           <Link href={productLink} target='_blank'>
-            <button className={`${isThreeMonth ? 'cta-btn2' : 'cta-btn3'} w-full`}>Get it now</button>
+            <button className={`${isThreeMonth ? 'cta-btn2' : 'cta-btn3'} w-full`}>Get it now {saleOff ? `with code ${discountCode}` : ''}</button>
           </Link>
           <p className='text-[#ECE6FE] text-xs'>
             Ideal for small teams (10-20 members)<br /> with a low budget.
           </p>
+          {saleOff > 0 ? <span style={{ textShadow: '#ba9918 0px 2px 3px' }} className='absolute -top-[10px] -right-[36px] pb-[5px] pt-[18px] bg-yellow-400 font-extrabold rotate-45 py-3 w-[100px]'>$ {saleOff}</span> : null}
         </Card>
 
       </div>

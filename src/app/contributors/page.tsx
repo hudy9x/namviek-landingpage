@@ -28,14 +28,17 @@ async function getContributors(page = 1) {
   let contributorsList = await request.json();
   const contributors: IContributor[] = []
 
-  contributorsList.map((c: any) => {
-    contributors.push({
-      name: c.login,
-      avatar: c.avatar_url,
-      url: c.html_url,
-      contributions: c.contributions
+  if (contributorsList && contributorsList.length) {
+    contributorsList.map((c: any) => {
+      contributors.push({
+        name: c.login,
+        avatar: c.avatar_url,
+        url: c.html_url,
+        contributions: c.contributions
+      })
     })
-  })
+  }
+
 
   return contributors;
 };
