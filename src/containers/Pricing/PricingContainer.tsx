@@ -43,6 +43,8 @@ export default function PricingContainer(product: {
   const saleOff = isThreeMonth ? 0 : 20;
   const discountCode = isThreeMonth ? '' : '100MEM'
 
+  const threeMonthDesc = `Ideal for tech-savvy individuals hosting apps for their teams, offering a cost-effective solution for short-term projects and quick experimentation with basic features and documentation.`
+  const lifetimeDesc = `Perfect for teams developing their own project management tools, providing long-term value and access to in-depth development documentation, including advanced customization options.`
 
   return <section id="pricing" className='pt-[200px]'>
     <div className="flex flex-col items-center">
@@ -64,7 +66,7 @@ export default function PricingContainer(product: {
       <div className="mt-10 sm:mt-28 flex flex-col sm:flex-row items-center gap-6">
         <Card type='darkblur' className='p-10 w-[95%] sm:w-[648px]' height="h-[460px] sm:h-[400px]">
           <h2 className='font-semibold text-xl'>{heading}</h2>
-          <p className='text-xs sm:text-[17px] leading-5 sm:leading-7 mt-6 second-color'>Enjoy {subheading} to our application documentation, tailored to your specific needs.</p>
+          <p className='text-xs sm:text-[14px] leading-5 sm:leading-7 mt-6 second-color'>{isThreeMonth ? threeMonthDesc : lifetimeDesc}</p>
           <h3 className='flex items-center gap-6 mt-6'>
             <span className='section-title whitespace-nowrap'>{`
               What's included
