@@ -17,7 +17,7 @@ export default function PricingContainer(product: {
   priceCurrency: string
   link: string
 }) {
-  const [accessType, setAccessType] = useState<EAccessType>(EAccessType.ThreeMonth)
+  const [accessType, setAccessType] = useState<EAccessType>(EAccessType.Lifetime)
   const isThreeMonth = accessType === EAccessType.ThreeMonth
 
   const developmentDoc = 'Development document'
