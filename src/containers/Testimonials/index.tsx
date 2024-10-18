@@ -67,7 +67,7 @@ export default function Testimonials() {
       <p className="pa1 w-[350px] sm:w-[650px] mt-[37px]">Discover what developers think of us on Dev.to. Find reviews, discussions, and see how our product can benefit you.</p>
 
       <div className="mt-16 sm:mt-28 w-[95%] sm:w-[1200px] flex flex-col sm:flex-row gap-5">
-        <div className='grid grid-cols-2 sm:grid-cols-1 gap-5'>
+        <div className='grid grid-cols-1 gap-5'>
           {comments.map((cm, cindex) => {
             const { comment, avatar, name, link } = cm
             const nickname = name.split(/\s+/).join('_').toLowerCase()
@@ -89,7 +89,7 @@ export default function Testimonials() {
           })}
         </div>
 
-        <div className='grid grid-cols-2 gap-5'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
           {comments2.map((cm, cindex) => {
             const { comment, avatar, name, hightlight, link } = cm
             const nickname = name.split(/\s+/).join('_').toLowerCase()
@@ -97,7 +97,7 @@ export default function Testimonials() {
               flexSize={true}
               border='normal'
               type='darkblur'
-              className={`p-6 group ${hightlight ? 'col-span-2' : ''}`}
+              className={`p-6 group ${hightlight ? 'col-span-1 sm:col-span-2' : ''}`}
             >
 
               <p className='text-zinc-300'>{comment}</p>
@@ -112,7 +112,7 @@ export default function Testimonials() {
           })}
         </div>
 
-        <div className='grid grid-cols-2 sm:grid-cols-1 gap-5'>
+        <div className='grid grid-cols-1 gap-5'>
           {comments3.map((cm, cindex) => {
             const { comment, avatar, name, link } = cm
             const nickname = name.split(/\s+/).join('_').toLowerCase()
