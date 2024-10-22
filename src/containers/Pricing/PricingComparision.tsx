@@ -44,7 +44,7 @@ const pricingData = {
       title: "Development document",
       features: [
         { name: "Create a new custom view", threeMonth: false, lifetime: true },
-        { name: "Custom field feature", threeMonth: false, lifetime: true },
+        { name: "Custom field feature (in progress)", threeMonth: false, lifetime: true },
         { name: "Comming soon ...", threeMonth: false, lifetime: true },
       ]
     },
@@ -52,7 +52,7 @@ const pricingData = {
       title: "Others",
       features: [
         { name: "Email support", threeMonth: true, lifetime: true },
-        { name: "Video tutorial", threeMonth: true, lifetime: true },
+        { name: "Video tutorial (in progress)", threeMonth: true, lifetime: true },
       ]
     }
   ]

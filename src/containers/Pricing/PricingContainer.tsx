@@ -26,7 +26,7 @@ export default function PricingContainer(product: {
     'Setup document',
     'Integration document',
     'Email support',
-    'Video tutorial',
+    'Video tutorial (in progress)',
     developmentDoc,
   ]
 
