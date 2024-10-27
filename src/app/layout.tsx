@@ -11,6 +11,9 @@ import Faqs from "@/containers/Faqs";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  openGraph: {
+    images: '/namviek-preview.png'
+  },
   title: "Namviek - The open source task management tool for tiny teams",
   description: "Do not mind the cost any more, just do your work now. Namviek has a lot of essential features that helps you run your team with a low budget",
 };
