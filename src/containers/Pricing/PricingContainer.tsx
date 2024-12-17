@@ -53,7 +53,7 @@ export default function PricingContainer(product: {
 
   const discountAmount = process.env.NEXT_PUBLIC_DISCOUNT_AMOUNT || '0';
   const saleOff = isThreeMonth ? 0 : calculateDiscount(priceNumber, discountAmount);
-  const discountCode = isThreeMonth ? '' : '100MEM'
+  const discountCode = isThreeMonth ? '' : (process.env.NEXT_PUBLIC_DISCOUNT_CODE || '');
 
   const threeMonthDesc = `Ideal for tech-savvy individuals hosting apps for their teams, offering a cost-effective solution for short-term projects and quick experimentation with basic features and documentation.`
   const lifetimeDesc = `Perfect for teams developing their own project management tools, providing long-term value and access to in-depth development documentation, including advanced customization options.`
