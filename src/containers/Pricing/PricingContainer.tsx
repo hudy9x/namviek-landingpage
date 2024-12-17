@@ -12,6 +12,15 @@ enum EAccessType {
 }
 
 // export const revalidate = 10
+
+const calculateDiscount = (price: number, discount: string) => {
+  if (discount.endsWith('%')) {
+    const percentValue = parseFloat(discount.replace('%', ''));
+    return Math.round((price * percentValue) / 100);
+  }
+  return parseFloat(discount);
+};
+
 export default function PricingContainer(product: {
   priceAmount: number
   priceCurrency: string
@@ -26,21 +35,24 @@ export default function PricingContainer(product: {
     'Setup document',
     'Integration document',
     'Email support',
-    'Video tutorial (in progress)',
+    'Video tutorial',
     developmentDoc,
   ]
 
   const heading = accessType === EAccessType.ThreeMonth ? '3 Months Access' : 'Lifetime Access'
   const subheading = accessType === EAccessType.ThreeMonth ? '3 month access' : 'lifetime access'
   const priceHeading = isThreeMonth ? 'Pricing for 3 months' : 'Pricing for lifetime'
-  const priceNumber = isThreeMonth ? 9 : 39;
+  const priceNumber = isThreeMonth 
+    ? Number(process.env.NEXT_PUBLIC_THREE_MONTH_PRICE || 9)
+    : Number(process.env.NEXT_PUBLIC_LIFETIME_PRICE || 39);
   const textColor = isThreeMonth ? 'text-[#EDC6CC]' : 'text-[#d3edc6]';
   const cardType = isThreeMonth ? 'red' : 'sky'
   const priceFor3MonthLink = process.env.NEXT_PUBLIC_THREEMONTH_ACCESS || ''
   const priceForLifetimeLink = process.env.NEXT_PUBLIC_LIFETIME_ACCESS || ''
   const productLink = isThreeMonth ? priceFor3MonthLink : priceForLifetimeLink
 
-  const saleOff = isThreeMonth ? 0 : 20;
+  const discountAmount = process.env.NEXT_PUBLIC_DISCOUNT_AMOUNT || '0';
+  const saleOff = isThreeMonth ? 0 : calculateDiscount(priceNumber, discountAmount);
   const discountCode = isThreeMonth ? '' : '100MEM'
 
   const threeMonthDesc = `Ideal for tech-savvy individuals hosting apps for their teams, offering a cost-effective solution for short-term projects and quick experimentation with basic features and documentation.`
