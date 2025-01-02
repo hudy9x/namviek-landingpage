@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MapString } from "./Map";
 import DottedMap from "dotted-map/without-countries";
 
@@ -10,9 +11,9 @@ export default function Region() {
     '37.9781325,-82.0662711', // virginia
   ]
 
-  const animateRegions = [
-    [211, 329, 'Virginia'],
-    [348, 971, 'Singapore'],
+  const animateRegions: [number, number, string, string][] = [
+    [175, 277, 'Virginia', 'https://namviek-vir.vercel.app/'],
+    [290, 820, 'Singapore', 'https://namviek-sing.vercel.app/'],
   ]
 
 
@@ -34,22 +35,25 @@ export default function Region() {
   });
 
   return (
-    <div className="relative" style={{ height: 600 }}>
+    <div className="relative" style={{ height: 500 }}>
       <img className="h-full" src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`} />
 
       {animateRegions.map((region, k) => {
-        const [top, left, title] = region
-        return <div key={k}
+        const [top, left, title, serverLink] = region
+        return <Link key={k}
           style={{ top, left }}
-          className="absolute top-[211px] left-[329px] cursor-pointer">
+          href={serverLink}
+          target="_blank"
+          title="Click me to open demo page"
+          className="absolute top-[211px] left-[329px] cursor-pointer group">
           <div className="relative">
             <span className="absolute top-0 left-0 w-3 h-3 rounded-full bg-green-500 inline-block"></span>
             <span className="absolute top-0 left-0 w-3 h-3 rounded-full bg-green-500 animate-ping inline-block"></span>
 
-            <div className="absolute -top-1.5 left-7 rounded-full px-3 py-1 bg-green-500/20 border border-green-700 text-xs text-white">{title}</div>
+            <div className="absolute -top-1.5 left-7 rounded-full px-3 py-1 bg-green-500/20 group-hover:border-green-700 border border-green-700/60 text-xs text-white/70 group-hover:text-white transition-all">{title}</div>
           </div>
 
-        </div>
+        </Link>
       })}
 
     </div>
