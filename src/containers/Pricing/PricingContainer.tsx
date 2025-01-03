@@ -42,7 +42,7 @@ export default function PricingContainer(product: {
   const heading = accessType === EAccessType.ThreeMonth ? '3 Months Access' : 'Lifetime Access'
   const subheading = accessType === EAccessType.ThreeMonth ? '3 month access' : 'lifetime access'
   const priceHeading = isThreeMonth ? 'Pricing for 3 months' : 'Pricing for lifetime'
-  const priceNumber = isThreeMonth 
+  const priceNumber = isThreeMonth
     ? Number(process.env.NEXT_PUBLIC_THREE_MONTH_PRICE || 9)
     : Number(process.env.NEXT_PUBLIC_LIFETIME_PRICE || 39);
   const textColor = isThreeMonth ? 'text-[#EDC6CC]' : 'text-[#d3edc6]';
@@ -130,7 +130,7 @@ export default function PricingContainer(product: {
         </Card>
 
       </div>
-      <p className='mt-14'><Link className='underline underline-offset-4' href={"/#setup"}>I want to try it first !!</Link></p>
+      <p className='mt-14'><Link className='underline underline-offset-4' href={"/demo"}>I want to try it first !!</Link></p>
     </div >
 
     <div className="absolute top-[350px] left-1/2 -translate-x-1/2 -z-10">

@@ -1,5 +1,6 @@
 import CTAButton from "@/components/CTAButton"
 import GithubStar from "@/components/GithubStar"
+import Link from "next/link"
 import { TiStar } from "react-icons/ti"
 
 function TrustBy() {
@@ -39,13 +40,30 @@ function HeroBackground() {
 
 export default function HeroSection() {
   return <section id="hero" className="mt-[70px] sm:mt-[120px] flex flex-col items-center">
+    <div className="mb-7">
+      {/* <a href="" target="_blank"> */}
+      {/*   <img src="https://trendshift.io/api/badge/repositories/10303" alt="hudy9x%2Fnamviek | Trendshift" style={{ height: 55, width: 250 }} width="250" height="55" /> */}
+      {/**/}
+      {/* </a> */}
+      <a href="https://trendshift.io/repositories/10303" target="_blank" className="rounded-full px-4 py-2 bg-white/10 hover:border-pink-500/90 duration-500 text-white/70 active:bg-white/0 hover:text-white transition-all backdrop-blur-sm border-2 border-white/30 text-xs">
+        #2 Repository of the day
+      </a>
+    </div>
     <h1 className="h1 text-center">
       {"Don't mind the cost"}<br />
       Just do the work
     </h1>
     <p className="pa1 w-[300px] sm:w-[600px] mt-[25px]">The open-source project management tool for super tiny teams with a lot of built in features</p>
     <TrustBy />
-    <CTAButton />
+    <div className="flex items-center gap-2">
+      <Link target="_blank" href={'https://docs.namviek.com/visual'} className="text-center mt-[32px]">
+        <button className="rounded-lg transition-all px-5 py-3 text-xs uppercase font-bold border border-zinc-700 bg-zinc-800/80 hover:bg-zinc-800">setup your own</button>
+      </Link>
+      <Link href={'/demo'} className="text-center mt-[32px]">
+        <button className="rounded-lg transition-all px-5 py-3 text-xs uppercase font-bold border border-zinc-800 bg-zinc-100/90 hover:bg-zinc-100 text-black">try it first</button>
+        {/* <button className="cta-btn3 uppercase text-xs">{`try it first`}</button> */}
+      </Link>
+    </div>
     <HeroBackground />
   </section>
 }
