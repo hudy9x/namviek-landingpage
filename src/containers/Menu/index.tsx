@@ -17,6 +17,7 @@ export default function Menu() {
           <Link href="/#setup">Setup</Link>
           <Link href="https://docs.namviek.com" target="_blank">Doc</Link>
           <Link href="/pricing">Pricing</Link>
+          <Link href="/demo">Demo</Link>
           <Link href="/contact">Contact</Link>
         </nav>
 
@@ -39,6 +40,7 @@ export default function Menu() {
         <Link href="/#setup">Setup</Link>
         <Link href="https://docs.namviek.com" target="_blank">Document</Link>
         <Link href="/pricing">Pricing</Link>
+        <Link href="/demo">Demo</Link>
         <Link href="/contact">Contact</Link>
       </nav>
     </div>
