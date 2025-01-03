@@ -35,28 +35,46 @@ export default function Region() {
   });
 
   return (
-    <div className="relative" style={{ height: 500 }}>
-      <img className="h-full" src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`} />
+    <>
+      <div className="sm:hidden space-y-3">
+        {animateRegions.map((region, key) => {
+          const title = region[2]
 
-      {animateRegions.map((region, k) => {
-        const [top, left, title, serverLink] = region
-        return <Link key={k}
-          style={{ top, left }}
-          href={serverLink}
-          target="_blank"
-          title="Click me to open demo page"
-          className="absolute top-[211px] left-[329px] cursor-pointer group">
-          <div className="relative">
-            <span className="absolute top-0 left-0 w-3 h-3 rounded-full bg-green-500 inline-block"></span>
-            <span className="absolute top-0 left-0 w-3 h-3 rounded-full bg-green-500 animate-ping inline-block"></span>
+          return <div key={key} className="relative rounded-full px-5 py-2 bg-green-500/20 group-hover:border-green-700 border border-green-700/60 text-sm text-white/70 group-hover:text-white transition-all">
 
-            <div className="absolute -top-1.5 left-7 rounded-full px-3 py-1 bg-green-500/20 group-hover:border-green-700 border border-green-700/60 text-xs text-white/70 group-hover:text-white transition-all">{title}</div>
+            <span className="absolute top-3 left-3 w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+            <span className="absolute top-3 left-3 w-3 h-3 rounded-full bg-green-500 animate-ping inline-block"></span>
+            <span className="pl-3">
+              {title}
+            </span>
           </div>
+        })}
+      </div>
+      <div className="hidden sm:block relative" style={{ height: 500 }}>
+        <img className="h-full" src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`} />
 
-        </Link>
-      })}
+        {animateRegions.map((region, k) => {
+          const [top, left, title, serverLink] = region
+          return <Link key={k}
+            style={{ top, left }}
+            href={serverLink}
+            target="_blank"
+            title="Click me to open demo page"
+            className="absolute top-[211px] left-[329px] cursor-pointer group">
+            <div className="relative">
+              <span className="absolute top-0 left-0 w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+              <span className="absolute top-0 left-0 w-3 h-3 rounded-full bg-green-500 animate-ping inline-block"></span>
 
-    </div>
+              <div className="absolute -top-1.5 left-7 rounded-full px-3 py-1 bg-green-500/20 group-hover:border-green-700 border border-green-700/60 text-xs text-white/70 group-hover:text-white transition-all">{title}</div>
+            </div>
+
+          </Link>
+        })}
+
+
+
+      </div>
+    </>
   );
 
 }
